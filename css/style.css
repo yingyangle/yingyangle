@@ -34,13 +34,13 @@
 @font-face {
 	font-family: "Calibri";
 	src: url("Calibri Italic.ttf");
-	font-style: italic, oblique;
+	font-style: italic;
 }
 
 @font-face {
 	font-family: "Calibri";
 	src: url("Calibri Bold Italic.ttf");
-	font-style: italic, oblique;
+	font-style: italic;
 	font-weight: bold;
 }
 
