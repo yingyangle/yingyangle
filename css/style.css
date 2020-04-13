@@ -624,11 +624,18 @@ button.navbar-toggler {
 
 /********** MEDIUM DEVICES **********/
 @media (min-width: 768px) and (max-width: 1199px) {
+	.container-fluid {
+		width: 95%;
+	}
 
 }
 
 /********** SMALL-ISH DEVICES **********/
 @media (min-width: 426px) and (max-width: 767px) {
+	.container-fluid {
+		width: 95%;
+	}
+
 	.image-container .image {
 	width: 100%;
 	}
@@ -753,6 +760,10 @@ button.navbar-toggler {
 
 /********** SMALL DEVICES **********/
 @media (max-width: 425px) {
+	.container-fluid {
+		width: 98%;
+	}
+
 	.jumbotron {
 		height: 150px;
 	}
