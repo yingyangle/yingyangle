@@ -73,6 +73,7 @@
 	/* COLORS */
 	--bg-color: #EEEEEE;
 	--text-color: #454545;
+	--text-hover-color: #747474;
 	--my-blue: #76B4C0;
 	--my-blue-light: #A7CFD3;
 	/*--my-blue-light: #B5E1E4;*/
@@ -199,17 +200,13 @@ a:hover .image {
 .shadow-effect {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-
 .navbar.shadow-effect{
 	-webkit-box-shadow: 0 10px 6px -6px #AAA;
 	   -moz-box-shadow: 0 10px 6px -6px #AAA;
 	        box-shadow: 0 10px 6px -6px #AAA;
 }
-
-.panel-footer.shadow-effect{
-	-webkit-box-shadow: 0 10px 20px 6px #AAA;
-	   -moz-box-shadow: 0 10px 20px 6px #AAA;
-	        box-shadow: 0 10px 20px 6px #AAA;
+.panel-footer.shadow-effect {
+  box-shadow: 5px -3px 8px #CCC;
 }
 
 /*.shadow-effect {
@@ -405,8 +402,8 @@ a:hover .image {
 
 /********************** CONTACT FORM **********************/
 form .row {
-	max-width: 700px;
-	min-width: 350px;
+	max-width: 500px;
+	/*min-width: 280px;*/
 }
 
 .md-form {
@@ -416,6 +413,7 @@ form .row {
 .form-control {
 	border-radius: 3px;
 	border-color: lightgray;
+	width: 100%;
 }
 
 textarea {
@@ -486,15 +484,6 @@ a.btn-info:hover, a.btn-info:focus, a.btn-info.active {
 	background-size: 35px 35px;
 }
 
-/* hamburger button */
-button.navbar-toggler {
-	border: none;
-}
-
-.navbar-expand-sm .navbar-collapse .nav-item {
-	margin: auto;
-}
-
 
 /********************** NAVBAR IPA **********************/
 .nav-container {
@@ -535,6 +524,59 @@ button.navbar-toggler {
 	position: absolute;	
 	top: 14px;
 	transition: 0.3s ease;
+}
+
+/********************** NAVBAR BUTTON **********************/
+.icon-bar {
+	width: 25px; 
+	height: 2px;
+	background-color: #B6B6B6;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 6px
+}
+ 
+.navbar-toggler {
+	border: none;
+	background: transparent !important;
+	margin-bottom: 6px;
+	/*margin-top: -10px;*/
+}
+
+/* hamburger button */
+button.navbar-toggler {
+	border: none;
+}
+
+.navbar-expand-sm .navbar-collapse .nav-item {
+	margin: auto;
+}
+
+.navbar-toggler .top-bar {
+	transform: rotate(40deg) translate(3px);
+	transform-origin: 10% 10%;
+	/*translate(3px) rotate(45deg);*/
+}
+ 
+.navbar-toggler .middle-bar {
+	opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+	transform: rotate(-40deg) translate(3px);
+	transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+	transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+	opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+	transform: rotate(0);
 }
 
 
@@ -678,6 +720,9 @@ button.navbar-toggler {
 		width: 95%;
 	}
 
+	color: var(--text-hover-color);
+		transition: 0s;
+
 }
 
 /********** SMALL-ISH DEVICES **********/
@@ -722,11 +767,11 @@ button.navbar-toggler {
 	}
 
 	.jumbotron {
-		height: 200px;
+		height: 170px;
 	}
 	
 	.md-form {
-		width: 60%;
+		width: 100%;
 	}
 
 	/****** NAVBAR ******/
@@ -744,11 +789,11 @@ button.navbar-toggler {
 	}
 
 	.nav-container {
-	/*background-color: pink;*/
-	height: 25px;
-	margin: auto;
-	position: relative;
-	overflow: hidden;
+		/*background-color: pink;*/
+		height: 25px;
+		margin: auto;
+		position: relative;
+		overflow: hidden;
 	}
 
 	.nav-ipa {
@@ -756,11 +801,14 @@ button.navbar-toggler {
 	}
 
 	.navbar-nav .nav-item .nav-link:hover .nav-text, .navbar-nav .nav-item .nav-link:focus .nav-text {
-	position: absolute;
-	top: 12px;
-	left: 50%;
-	transform: translate(-50%, -50%);
+		position: absolute;
+		top: 12px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: var(--text-hover-color);
+		transition: 0s;
 	}
+	 
 
 	h1 {
 		font-size: 45px;
@@ -819,11 +867,11 @@ button.navbar-toggler {
 	}
 
 	.md-form {
-		width: 60%;
+		width: 100%;
 	}
 
 	.image-container .image {
-	width: 100%;
+		width: 100%;
 	}
 
 	/****** NAVBAR ******/
@@ -841,11 +889,11 @@ button.navbar-toggler {
 	}
 
 	.nav-container {
-	/*background-color: pink;*/
-	height: 25px;
-	margin: auto;
-	position: relative;
-	overflow: hidden;
+		/*background-color: pink;*/
+		height: 25px;
+		margin: auto;
+		position: relative;
+		overflow: hidden;
 	}
 
 	.nav-ipa {
@@ -853,10 +901,12 @@ button.navbar-toggler {
 	}
 
 	.navbar-nav .nav-item .nav-link:hover .nav-text, .navbar-nav .nav-item .nav-link:focus .nav-text {
-	position: absolute;
-	top: 12px;
-	left: 50%;
-	transform: translate(-50%, -50%);
+		position: absolute;
+		top: 12px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: var(--text-hover-color);
+		transition: 0s;
 	}
 	
 	/****** SITE TITLE ******/
