@@ -44,47 +44,8 @@
 </div> <!-- end container-fluid -->
 <!-- end title -->
 
-<!-- HIDDEN NAVIGATION BAR -->
-<!-- <nav class="navbar fixed-top navbar-light pull-right" id="my-hidden-navbar">
-  <div class="container-fluid">
-
-  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsed-nav-items" aria-controls="collapsed-nav-items" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="collapsed-nav-items">
-    <ul class="navbar-nav mr-auto" id="nav-items">
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">
-          <div class='menu-icon'></div>
-          <div>About</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">
-          <div class='menu-icon'></div>
-          <div>work</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">
-          <div class='menu-icon'></div>
-          <div>School</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">
-          <div class='menu-icon'></div>
-          <div>Projects</div>
-        </a>
-      </li>
-    </ul>
-  </div>
-  </div>
-</nav> -->
-
 <!-- NAVIGATION BAR -->
-<nav class="navbar navbar-expand navbar-light" id="my-navbar">
+<nav class="navbar navbar-expand-sm navbar-light" id="my-navbar">
 <div class="container-fluid">
   <!-- HAMBURGER BUTTON -->
   <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsed-nav-items" aria-controls="collapsed-nav-items" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,19 +58,19 @@
       <li class="nav-item">
         <a class="nav-link" href="about.html">
           <div class='menu-icon'></div>
-          <div id="nav-container" style="width: 60px;">
-            <div id="nav-text">about</div>
-            <div id="nav-ipa">/əˈbaʊt/</div>
+          <div class="nav-container" style="width: 60px;">
+            <div class="nav-text">about</div>
+            <div class="nav-ipa">/əˈbaʊt/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- WORK -->
       <li class="nav-item">
         <a class="nav-link" href="work.html">
-          <div class='menu-icon menu-icon-fill'></div>
-          <div id="nav-container" style="width: 90px;">
-            <div id="nav-text">work</div>
-            <div id="nav-ipa">/wɝk/</div>
+          <div class='menu-icon'></div>
+          <div class="nav-container" style="width: 90px;">
+            <div class="nav-text">work</div>
+            <div class="nav-ipa">/wɝk/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
@@ -117,19 +78,19 @@
       <li class="nav-item">
         <a class="nav-link" href="school.html">
           <div class='menu-icon'></div>
-          <div id="nav-container" style="width: 50px;">
-            <div id="nav-text">school</div>
-            <div id="nav-ipa">/skuːl/</div>
+          <div class="nav-container" style="width: 50px;">
+            <div class="nav-text">school</div>
+            <div class="nav-ipa">/skuːl/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- PROJECTS -->
       <li class="nav-item">
         <a class="nav-link" href="projects.html">
-          <div class='menu-icon'></div>
-          <div id="nav-container" style="width: 100px;">
-            <div id="nav-text">projects</div>
-            <div id="nav-ipa">/ˈpɹɑdˌʒɛkts/</div>
+          <div class='menu-icon menu-icon-fill'></div>
+          <div class="nav-container" style="width: 100px;">
+            <div class="nav-text">projects</div>
+            <div class="nav-ipa">/ˈpɹɑdˌʒɛkts/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
@@ -164,13 +125,13 @@
   <p class="upper">Autism spectrum disorder (ASD) is a neurodevelopmental condition associated with life-long deficits in communication that can impact both personal and professional well-being. Although the linguistic features associated with these deficits are routinely observed in clinical settings, they are difficult to quantify. For our research, we're collecting a growing dataset of conversations between high-functioning adults with ASD and their neurotypical conversational partners as they complete several collaborative tasks. We compare the linguistic characteristics of the two groups using both manually annotated features and computationally predicted features extracted from the conversations.</p>
   <div class="image-container">
     <!-- <a href="images/research1.png" data-lightbox="fraktur" data-title="comparison of speech act distribution for austic participants (ASD) and typically developing participants (TD)"><img src="images/research1.png" alt="" class="image" width="40%"></a> -->
-    <img src="images/research1.png" alt="" class="image" width="40%">
+    <img src="images/research1.png" alt="" class="image">
   </div> <!-- end image-container -->
   <br><br>
  
-  <h3 class="inline">Automated Language Analysis for</h3>
+  <h3 class="inline">Automated Language Analysis for Dementia </h3>
   <span class="nobreak">
-    <h3 class="inline">Dementia Sceening</h3>
+    <h3 class="inline">Sceening</h3>
     <img src="images/paper.svg" alt="" width="30px" class="body-icon">
   </span>
   <p class="upper">A common method of screening for dementia is the administration of a verbal fluency test, in which the patient is presented with a semantic or phonetic category and is given a minute to list as many words belonging to that category as they can. This research aims at using word embedding models to automatically analyze the fluency tests, thus removing the need for specialists to manually analyze the data themselves. Using "animals" as the semantic topic, we collect verbal fluency test data from participants in several age groups, with and without dementia. The cosine similarity between each pair of adjacent animals in the data is then generated by vector space models to determine whether a new semantic thread has begun. We employ a number of pre-trained models to generate the similarity metrics, using algorithms such as fastText, word2vec, gensim, and GloVe, and we also collect domain-specific data from Wikipedia on which new models are trained from scratch.</p>
