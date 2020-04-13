@@ -196,6 +196,54 @@ a:hover .image {
 
 
 /********************** IMAGES & GRAPHICS **********************/
+.shadow-effect {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.navbar.shadow-effect{
+	-webkit-box-shadow: 0 10px 6px -6px #AAA;
+	   -moz-box-shadow: 0 10px 6px -6px #AAA;
+	        box-shadow: 0 10px 6px -6px #AAA;
+}
+
+.panel-footer.shadow-effect{
+	-webkit-box-shadow: 0 10px 20px 6px #AAA;
+	   -moz-box-shadow: 0 10px 20px 6px #AAA;
+	        box-shadow: 0 10px 20px 6px #AAA;
+}
+
+/*.shadow-effect {
+  position: relative;
+}
+.shadow-effect:before, .shadow-effect:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.shadow-effect:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}*/
+
 .image-container {
 	margin: auto;
 	text-align: center;
