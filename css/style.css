@@ -203,7 +203,7 @@ a:hover .image {
 }
 
 .image-container .image {
-	width: 60%;
+	width: 50%;
 }
 
 .body-icon {
@@ -295,7 +295,7 @@ a:hover .image {
 
 #contact-info p {
 	/*line-height: 12px;*/
-	/*margin: 0;*/
+	margin: 0;
 }
 
 

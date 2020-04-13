@@ -128,6 +128,61 @@
   </div> <!-- end contact-info -->
   <br><br>  
 
+    <!-- MESSAGE ME -->
+  <h2 class="inline">Message Me</h2>
+  <img src="images/mail.svg" alt="" width="35px" class="body-icon">
+  <section class="mb-4" style="margin-top: -10px;">
+    <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <!-- FORM -->
+            <form id="contact-form" name="contact-form" action="https://formspree.io/xvobvvng" method="POST" target="_blank">
+
+                <!-- row: NAME & EMAIL -->
+                <div class="row">
+                    <!-- column: NAME -->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                        </div>
+                    </div> <!-- end column: name -->
+                    <!-- column: EMAIL -->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div> <!-- end column: email -->
+                </div> <!-- end row: name & email -->
+                
+                <!-- row: SUBJECT -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                        </div>
+                    </div>
+                </div> <!-- end row: subject -->
+                
+                <!-- row: MESSAGE -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Message" height="auto" required="true" style="min-height: 65;"></textarea>
+                        </div>
+                    </div>
+                </div> <!-- end row: message -->
+
+            </form> <!-- end form -->
+            <br>
+            
+            <!-- SEND BUTTON -->
+            <div class="text-md-left">
+                <a class="btn btn-info" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div> <!-- end col-md-9 -->
+    </div> <!-- end row -->
+  </section> <!-- end mb-4 -->
+
   </div> <!-- end jumbotron container-fluid -->
 </div> <!-- end container-fluid -->
 <!---------------------------- END BODY ---------------------------->
