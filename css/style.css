@@ -44,6 +44,30 @@
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: "Cambria";
+	src: url("Cambria.ttf");
+}
+
+@font-face {
+	font-family: "Cambria";
+	src: url("Cambria Bold.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Cambria";
+	src: url("Cambria Italic.ttf");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Cambria";
+	src: url("Cambria Bold Italic.ttf");
+	font-style: italic;
+	font-weight: bold;
+}
+
 
 :root {
 	/* COLORS */
@@ -188,6 +212,10 @@ a:hover .image {
 	margin-left: 1rem;
 }
 
+.flowers {
+	margin-bottom: 2rem;
+}
+
 .icon-right {
 	/*float: right; */
 	margin: 0.8rem 0.5rem; 
@@ -232,6 +260,26 @@ a:hover .image {
 	display: none;
 }
 
+.bracket {
+	margin: 0;
+	margin-top: 18%;
+	padding: 0 -2%;
+}
+
+
+.bracket img {
+	height: 180px;
+}
+
+#main-content .bracket {
+	/*background: orange;*/
+}
+
+.index .col-md-1, .index .col-md-2, .index .col-md-6 {
+	padding: 0;
+	margin: 0;
+}
+
 
 /********************** ABOUT **********************/
 /* curve text around image */
@@ -247,7 +295,7 @@ a:hover .image {
 
 #contact-info p {
 	/*line-height: 12px;*/
-	margin: 0;
+	/*margin: 0;*/
 }
 
 
@@ -289,7 +337,7 @@ a:hover .image {
 .single-col .course {
     color: white;
     padding: .5rem 0.2rem;
-    margin: 0 8rem;
+    margin: 0 14vw;
     margin-bottom: 0.8rem;
     border-radius: 1rem;
     transition: ease 0.2s;
@@ -685,7 +733,7 @@ button.navbar-toggler {
 		margin: 0.4rem 0;
 	}
 
-	.body-icon {
+	.body-icon, .flowers, .bracket {
 		display: none;
 	}
 
@@ -834,12 +882,12 @@ button.navbar-toggler {
 		margin: 0.4rem 0;
 	}
 
-	.body-icon {
+	.body-icon, .flowers, .bracket {
 		display: none;
 	}
 
 	.about .body-icon {
-		display: inline;
+		/*display: inline;*/
 	}
 
 	.upper {
@@ -859,7 +907,7 @@ button.navbar-toggler {
 /********** TINY DEVICES **********/
 @media (max-width: 300px) {
 	.about .body-icon {
-		display: none;
+		/*display: none;*/
 	}
 
 }
