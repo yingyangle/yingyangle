@@ -20,6 +20,30 @@
 	src: url("diggory_doodles.ttf");
 }
 
+@font-face {
+	font-family: "Calibri";
+	src: url("Calibri.ttf");
+}
+
+@font-face {
+	font-family: "Calibri";
+	src: url("Calibri Bold.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Calibri";
+	src: url("Calibri Italic.ttf");
+	font-style: italic, oblique;
+}
+
+@font-face {
+	font-family: "Calibri";
+	src: url("Calibri Bold Italic.ttf");
+	font-style: italic, oblique;
+	font-weight: bold;
+}
+
 
 :root {
 	/* COLORS */
@@ -273,13 +297,13 @@ a:hover .image {
 
 .course1 {
 	/*background-color: var(--my-blue);*/
-	background-color: rgb(181, 209, 216);
+	background-color: #B5D1D8;
 }
 
 .course2 {
 	/*background-color: var(--my-green);*/
 	
-	background-color: rgb(187, 214, 173);
+	background-color: #BBD6AD;
 }
 
 
