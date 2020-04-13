@@ -566,6 +566,8 @@ button.navbar-toggler {
 	top: 22px;
 	transition: 0.3s ease;
 	white-space: nowrap;
+	padding-left: 0.3rem;
+	padding-right: 0.2rem;
 }
 #title-ipa {
 	font-size: 36px;
