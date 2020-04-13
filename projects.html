@@ -36,8 +36,8 @@
 <div class='container-fluid' style="padding: 0; width: 100%;">
   <div class="jumbotron text-center">
     <div id="title-container">
-      <a href='https://yingyangle.github.io'>
-        <div id="title">christine ying yang</div>
+      <a id="navIndexUrl" href='https://yingyangle.github.io'>
+        <div id="title" onclick="window.location.reload(true);">christine ying yang</div>
         <div id="title-ipa">/krɪˈstin &nbsp; jɪŋ &nbsp; jæŋ/</div>
       </a> <!-- end index.html link -->
     </div> <!-- end title-container -->
@@ -60,41 +60,41 @@
     <ul class="navbar-nav mr-auto" id="nav-items">
       <!-- ABOUT -->
       <li class="nav-item">
-        <a class="nav-link" href="about.html">
+        <a id='navAboutUrl' class="nav-link" href="about.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 60px;">
-            <div class="nav-text">about</div>
-            <div class="nav-ipa">/əˈbaʊt/</div>
+            <div class="nav-text" id="navAbout">about</div>
+            <div class="nav-ipa" id="navIpaAbout">/əˈbaʊt/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- WORK -->
       <li class="nav-item">
-        <a class="nav-link" href="work.html">
+        <a id='navWorkUrl' class="nav-link" href="work.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 90px;">
-            <div class="nav-text">work</div>
-            <div class="nav-ipa">/wɝk/</div>
+            <div class="nav-text" id="navWork">work</div>
+            <div class="nav-ipa" id="navIpaWork">/wɝk/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- SCHOOL -->
       <li class="nav-item">
-        <a class="nav-link" href="school.html">
+        <a id='navSchoolUrl' class="nav-link" href="school.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 50px;">
-            <div class="nav-text">school</div>
-            <div class="nav-ipa">/skuːl/</div>
+            <div class="nav-text" id="navSchool">school</div>
+            <div class="nav-ipa" id="navIpaSchool">/skuːl/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- PROJECTS -->
       <li class="nav-item">
-        <a class="nav-link" href="projects.html">
+        <a id='navProjectsUrl' class="nav-link" href="projects.html" onclick="window.location.reload(true);">
           <div class='menu-icon menu-icon-fill'></div>
           <div class="nav-container" style="width: 100px;">
-            <div class="nav-text">projects</div>
-            <div class="nav-ipa">/ˈpɹɑdˌʒɛkts/</div>
+            <div class="nav-text" id="navProjects">projects</div>
+            <div class="nav-ipa" id="navIpaProjects">/ˈpɹɑdˌʒɛkts/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
@@ -117,10 +117,10 @@
 
   <!-- FRAKTUR CRACKER -->
   <div>
-    <h1 class="inline" style="">Fraktur Cracker </h1>
+    <h1 id='fraktur' class="inline" style="">Fraktur Cracker </h1>
     <a  class="social-icon-white" href="https://github.com/yingyangle/fraktur" target="_blank"><img src="images/mygithub.svg" alt="(github)" class="icon-right" width="30rem"></a>
   </div>
-  <p class="upper-more">Fraktur is a blackletter typeface commonly used in German texts up until the mid-20th century. The ability to automatically transcribe texts printed in Fraktur would enable scholars to more efficiently work with and analyze historical texts. Performing optical character recognition on historical texts in particular poses additional challenges resulting from broken characters, scan quality, and spelling variations. This project aims to apply a simple similarity-based approach to the optical character recognition of individual Fraktur letters. Using a zoning-based black pixel density feature we were able to achieve approximately 92% accuracy using a k-NN classifier.</p>
+  <p id='frakturtext' class="upper-more">Fraktur is a blackletter typeface commonly used in German texts up until the mid-20th century. The ability to automatically transcribe texts printed in Fraktur would enable scholars to more efficiently work with and analyze historical texts. Performing optical character recognition on historical texts in particular poses additional challenges resulting from broken characters, scan quality, and spelling variations. This project aims to apply a simple similarity-based approach to the optical character recognition of individual Fraktur letters. Using a zoning-based black pixel density feature we were able to achieve approximately 92% accuracy using a k-NN classifier.</p>
   <div class="image-container">
     <!-- <a href="images/fraktur1.png" data-lightbox="fraktur" data-title="a sample of the dataset"><img src="images/fraktur1.png" alt="" class="image" width="60%"></a> -->
     <img src="images/fraktur1.png" alt="" class="image">
@@ -134,10 +134,10 @@
 
   <!-- WHO SAID THAT -->
   <div>
-    <h1 class="inline" style="">Who Said That</h1><h1 class="number upper-bottom inline"> ? </h1>
+    <h1 id='wst' class="inline" style="">Who Said That</h1><h1 class="number upper-bottom inline"> ? </h1>
     <a  class="social-icon-white" href="https://github.com/yingyangle/whosaidthat" target="_blank"><img src="images/mygithub.svg" alt="(github)" class="icon-right" width="30rem"></a>
   </div>
-  <p class="upper-more">Authorship attribution often relies upon the writing style, vocabulary, and topics of interest among different writers, however these factors are more difficult to ascertain when analyzing shorter documents. This project experiments with different methods of authorship attribution on shorter texts, using lines of dialogue from TV shows to try and predict the speaker of each line. We explore two sets of features, one consisting of manually selected lingusitic features, and the other consisting of sentence embeddings generated from the Google News word2vec model. Of the three algorithms tested, we found that using sentence embeddings with a logistic regression algorithm generally yielded the highest accuracy for each show. We also observed some interesting differences in how the show's genre affected the accuracy of the predictions.</p>
+  <p id='wsttext' class="upper-more">Authorship attribution often relies upon the writing style, vocabulary, and topics of interest among different writers, however these factors are more difficult to ascertain when analyzing shorter documents. This project experiments with different methods of authorship attribution on shorter texts, using lines of dialogue from TV shows to try and predict the speaker of each line. We explore two sets of features, one consisting of manually selected linguistic features, and the other consisting of sentence embeddings generated from the Google News word2vec model. Of the three algorithms tested, we found that using sentence embeddings with a logistic regression algorithm generally yielded the highest accuracy for each show. We also observed some interesting differences in how the show's genre affected the accuracy of the predictions.</p>
 
   <div class="image-container">
     <!-- <a href="images/wst1.png" data-lightbox="wst" data-title="word and utterance length for characters in The Big Bang Theory "><img src="images/wst1.png" alt="" class="image" width="60%"></a> -->
@@ -165,7 +165,12 @@
         <a class="social-icon" href="https://github.com/yingyangle"  target="_blank"> <img src="images/github.svg" alt="Github" height="20"></a>
         <a class="social-icon" href="https://www.instagram.com/yingyangles/"  target="_blank"> <img src="images/instagram.svg" alt="Instagram" height="20"></a>
       </p>
-      <p>&copy; 2020 Christine Ying Yang</p>
+      <p id='my-copyright'>&copy; 2020 Christine Ying Yang</p>
+      <p id='languages' style="margin-bottom: 1rem;">
+        <a href="projects.html" onclick="window.location.href = 'projects.html#en'; window.location.reload(true);">English</a>
+        <a href="#de" onclick="window.location.href = 'projects.html#de'; window.location.reload(true);">Deutsch</a>
+      </p>
+      
     </div> <!-- end footer-copyright -->
   </div> <!-- end container-fluid -->
 </footer>
@@ -176,7 +181,58 @@
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script> 
 <script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+
+<script>
+  // TRANSLATIONS
+  var language = {
+    de: {
+      description: '(eine persönliche website)',
+      navAbout: 'info',
+      navWork: 'arbeit',
+      navSchool: 'uni',
+      navProjects: 'projekte',
+      navIpaAbout: '/ˈɪnfoː/',
+      navIpaWork: '/ˈaʁbaɪ̯t/',
+      navIpaSchool: '/ˈʊni/',
+      navIpaProjects: '/pʁoˈjɛktə/',
+      navAboutUrl: 'about.html#de',
+      navWorkUrl: 'work.html#de',
+      navSchoolUrl: 'school.html#de',
+      navProjectsUrl: 'projects.html#de',
+      navIndexUrl: 'index.html#de',
+
+      fraktur: 'Fraktur Knacker',
+      frakturtext: 'Die Fraktur ist eine gebrochene Schrift, die bis Mitte des 20. Jahrhunderts in deutschen Texten gebräuchlich war. Die Fähigkeit, in Fraktur gedruckte Texte automatisch zu transkribieren, würde es Wissenschaftlern ermöglichen, mit historischen Texten effizienter zu arbeiten und sie zu analysieren. Texten bringt zusätzliche Herausforderungen mit sich, wie z.B. gebrochene Buchstaben, Scanqualität und Rechtschreibvarianten. Dieses Projekt wendet einen einfachen, auf Ähnlichkeit basierenden Ansatz für die optische Zeichenerkennung einzelner Fraktur-Buchstaben an. Unter Verwendung eines Merkmals mit schwarzer Pixeldichte konnten wir mit einem k-NN-Klassifikator eine Genauigkeit von etwa 92% erreichen.',
+      wst: 'Wer hat das gesagt',
+      wsttext: 'Die Zuordnung der Autorenschaft hängt oft vom Schreibstil, dem Vokabular und den Themen ab. Diese Faktoren sind jedoch bei der Analyse kürzerer Dokumente schwieriger zu ermitteln. Dieses Projekt experimentiert mit verschiedenen Methoden der Autorschaftszuordnung bei kürzeren Texten, wobei Dialogzeilen aus Fernsehsendungen verwendet werden, um zu versuchen, den Sprecher jeder Zeile vorherzusagen. Wir untersuchen zwei Sätze von Merkmalen. Wir untersuchen sowohl manuell ausgewählte linguistische Merkmale als auch Satzeinbettungsmerkmale, die aus dem word2vec-Modell von Google News generiert wurden. Von den drei getesteten Algorithmen stellten wir fest, dass die Satzeinbettungen mit einem logistischen Regressionsalgorithmus im Allgemeinen die höchste Genauigkeit ergab. Wir beobachteten auch einige interessante Unterschiede darin, wie das Genre der Sendung die Genauigkeit der Vorhersagen beeinflusst.'
+    }
+  };
+
+  // SWITCH LANGUAGES
+  if (window.location.hash) {
+    if (window.location.hash == "#de") {
+      navAbout.textContent = language.de.navAbout;
+      navWork.textContent = language.de.navWork;
+      navSchool.textContent = language.de.navSchool;
+      navProjects.textContent = language.de.navProjects;
+      navIpaAbout.textContent = language.de.navIpaAbout;
+      navIpaWork.textContent = language.de.navIpaWork;
+      navIpaSchool.textContent = language.de.navIpaSchool;
+      navIpaProjects.textContent = language.de.navIpaProjects;
+      navAboutUrl.href = language.de.navAboutUrl;
+      navWorkUrl.href = language.de.navWorkUrl;
+      navSchoolUrl.href = language.de.navSchoolUrl;
+      navProjectsUrl.href = language.de.navProjectsUrl;
+      navIndexUrl.href = language.de.navIndexUrl;
+      description.textContent = language.de.description;
+
+      fraktur.textContent = language.de.fraktur;
+      frakturtext.textContent = language.de.frakturtext;
+      wst.textContent = language.de.wst;
+      wsttext.textContent = language.de.wsttext;
+    }
+  }
+</script>
   
 </body>
 </html>

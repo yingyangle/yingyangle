@@ -36,8 +36,8 @@
 <div class='container-fluid' style="padding: 0; width: 100%;">
   <div class="jumbotron text-center">
     <div id="title-container">
-      <a href='https://yingyangle.github.io'>
-        <div id="title">christine ying yang</div>
+      <a id="navIndexUrl" href='https://yingyangle.github.io'>
+        <div id="title" onclick="window.location.reload(true);">christine ying yang</div>
         <div id="title-ipa">/krɪˈstin &nbsp; jɪŋ &nbsp; jæŋ/</div>
       </a> <!-- end index.html link -->
     </div> <!-- end title-container -->
@@ -60,41 +60,41 @@
     <ul class="navbar-nav mr-auto" id="nav-items">
       <!-- ABOUT -->
       <li class="nav-item">
-        <a class="nav-link" href="about.html">
+        <a id='navAboutUrl' class="nav-link" href="about.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 60px;">
-            <div class="nav-text">about</div>
-            <div class="nav-ipa">/əˈbaʊt/</div>
+            <div class="nav-text" id="navAbout">about</div>
+            <div class="nav-ipa" id="navIpaAbout">/əˈbaʊt/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- WORK -->
       <li class="nav-item">
-        <a class="nav-link" href="work.html">
+        <a id='navWorkUrl' class="nav-link" href="work.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 90px;">
-            <div class="nav-text">work</div>
-            <div class="nav-ipa">/wɝk/</div>
+            <div class="nav-text" id="navWork">work</div>
+            <div class="nav-ipa" id="navIpaWork">/wɝk/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- SCHOOL -->
       <li class="nav-item">
-        <a class="nav-link" href="school.html">
+        <a id='navSchoolUrl' class="nav-link" href="school.html" onclick="window.location.reload(true);">
           <div class='menu-icon menu-icon-fill'></div>
           <div class="nav-container" style="width: 50px;">
-            <div class="nav-text">school</div>
-            <div class="nav-ipa">/skuːl/</div>
+            <div class="nav-text" id="navSchool">school</div>
+            <div class="nav-ipa" id="navIpaSchool">/skuːl/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- PROJECTS -->
       <li class="nav-item">
-        <a class="nav-link" href="projects.html">
+        <a id='navProjectsUrl' class="nav-link" href="projects.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 100px;">
-            <div class="nav-text">projects</div>
-            <div class="nav-ipa">/ˈpɹɑdˌʒɛkts/</div>
+            <div class="nav-text" id="navProjects">projects</div>
+            <div class="nav-ipa" id="navIpaProjects">/ˈpɹɑdˌʒɛkts/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
@@ -121,31 +121,32 @@
   <h1 class="number inline"> '21</h1>
   <img src="images/twirl_right.svg" alt="" class="body-icon twirl hide-mobile">
   <p>Chestnut Hill, Massachusetts</p>
-  <p>B.A., Linguistics & Computer Science</p>
+  <p id="degree">B.A., Linguistics & Computer Science</p>
   <p>GPA: 3.92</p>
   <br>
 
   <img src="images/trophy.svg" alt="" width="25px" class="body-icon">
-  <h2 style="display: inline;">Honors</h2><h2 style="display: inline; font-family: diggory; font-size: 14px;"> & </h2><h2 style="display: inline;">Awards</h2>
+  <h2 id="honors" style="display: inline;">Honors</h2>
+  <!-- <h2 style="display: inline; font-family: diggory; font-size: 14px;"> & </h2><h2 style="display: inline;">Awards</h2> -->
   <img src="images/trophy.svg" alt="" width="25px" class="body-icon hide-mobile">
-  <p>Dean's Scholar Award</p>
-  <p>Sophomore Scholar Award</p>
-  <p>Advanced Study Grant Recipient</p>
-  <p>National Latin Exam Scholarship Recipient</p>
+  <p id='deansscholar'>Dean's Scholar Award</p>
+  <p id='sophscholar'>Sophomore Scholar Award</p>
+  <p id='asg'>Advanced Study Grant Recipient</p>
+  <p id='nle'>National Latin Exam Scholarship Recipient</p>
   <br>
 
   <img src="images/trumpet.svg" alt="" width="40px" class="body-icon">
   <!-- <h2 style="display: inline;">Clubs</h2><h2 style="display: inline; font-family: diggory; font-size: 14px;"> & </h2><h2 style="display: inline;">Activities</h2> -->
-  <h2 style="display: inline;">Activities</h2>
+  <h2 id="activities" style="display: inline;">Activities</h2>
   <img src="images/trumpet.svg" alt="" width="40px" class="body-icon hide-mobile">
-  <p>Screaming Eagles Marching Band</p>
-  <p>Boston College Pep Band</p>
-  <p>Conversation Partners Program</p>
-  <p>BC Computer Science Society</p>
+  <p id='mband'>Screaming Eagles Marching Band</p>
+  <p id='pband'>Boston College Pep Band</p>
+  <p id='cpp'>Conversation Partners Program</p>
+  <p id='bccss'>BC Computer Science Society</p>
   <br>
 
   <img src="images/pencil.svg" alt="" class="body-icon pencil">
-  <h2 class="inline">Coursework</h2>
+  <h2 id="courses1" class="inline">Coursework</h2>
   <img src="images/pencil.svg" alt="" class="body-icon pencil hide-mobile">
   <section class="coursework">
     <div class="row">
@@ -155,11 +156,11 @@
                 <div class="row">
                     <!-- column: LEFT -->
                     <div class="col-md-6">
-                        <div class="course course1">Morphology</div>
+                        <div id='morph' class="course course1">Morphology</div>
                     </div> <!-- end column -->
                     <!-- column: RIGHT -->
                     <div class="col-md-6">
-                        <div class="course course2">Machine Learning</div>
+                        <div id='ml' class="course course2">Machine Learning</div>
                     </div> <!-- end column -->
                 </div> <!-- end row -->
 
@@ -167,11 +168,11 @@
                 <div class="row">
                     <!-- column: LEFT -->
                     <div class="col-md-6">
-                        <div class="course course1">Syntax & Semantics</div>
+                        <div id='syntax' class="course course1">Syntax & Semantics</div>
                     </div> <!-- end column -->
                     <!-- column: RIGHT -->
                     <div class="col-md-6">
-                        <div class="course course2">Natural Language Processing</div>
+                        <div id='nlp' class="course course2">Natural Language Processing</div>
                     </div> <!-- end column -->
                 </div> <!-- end row -->
 
@@ -179,11 +180,11 @@
                 <div class="row">
                     <!-- column: LEFT -->
                     <div class="col-md-6">
-                        <div class="course course1">Psycholinguistics</div>
+                        <div id='psycholing' class="course course1">Psycholinguistics</div>
                     </div> <!-- end column -->
                     <!-- column: RIGHT -->
                     <div class="col-md-6">
-                        <div class="course course2">Randomness & Computation</div>
+                        <div id='randomness' class="course course2">Randomness & Computation</div>
                     </div> <!-- end column -->
                 </div> <!-- end row -->
 
@@ -191,11 +192,11 @@
                 <div class="row">
                     <!-- column: LEFT -->
                     <div class="col-md-6">
-                        <div class="course course1">Sociolinguistics</div>
+                        <div id='socioling' class="course course1">Sociolinguistics</div>
                     </div> <!-- end column -->
                     <!-- column: RIGHT -->
                     <div class="col-md-6">
-                        <div class="course course2">Logic & Computation</div>
+                        <div id='logic' class="course course2">Logic & Computation</div>
                     </div> <!-- end column -->
                 </div> <!-- end row -->
 
@@ -203,11 +204,11 @@
                 <div class="row">
                     <!-- column: LEFT -->
                     <div class="col-md-6">
-                        <div class="course course1">Typology</div>
+                        <div id='typology' class="course course1">Typology</div>
                     </div> <!-- end column -->
                     <!-- column: RIGHT -->
                     <div class="col-md-6">
-                        <div class="course course2">Computer Systems</div>
+                        <div id='systems' class="course course2">Computer Systems</div>
                     </div> <!-- end column -->
                 </div> <!-- end row -->
                 
@@ -226,7 +227,7 @@
   <br>
 
   <img src="images/pencil.svg" alt="" class="body-icon pencil">
-  <h2 class="inline">Coursework</h2>
+  <h2 id="courses2" class="inline">Coursework</h2>
   <img src="images/pencil.svg" alt="" class="body-icon pencil hide-mobile">
   <section class="coursework single-col">
     <div class="row">
@@ -236,7 +237,7 @@
                 <div class="row">
                     <!-- column -->
                     <div class="col-12">
-                        <div class="course course1">Intro to Computational Linguistics</div>
+                        <div id='compling' class="course course1">Intro to Computational Linguistics</div>
                     </div> <!-- end column -->
                 </div> <!-- end row -->
 
@@ -244,7 +245,7 @@
                 <div class="row">
                     <!-- column -->
                     <div class="col-12">
-                        <div class="course course1">Intro to Phonetics</div>
+                        <div id='phonetics' class="course course1">Intro to Phonetics</div>
                     </div> <!-- end column -->
                 </div> <!-- end row -->
 
@@ -252,7 +253,7 @@
                 <div class="row">
                     <!-- column -->
                     <div class="col-12">
-                        <div class="course course1">Constructionist Approaches</div>
+                        <div id='constructionist' class="course course1">Constructionist Approaches</div>
                     </div> <!-- end column -->
                 </div> <!-- end row -->
 
@@ -260,7 +261,7 @@
                 <div class="row">
                     <!-- column -->
                     <div class="col-12">
-                        <div class="course course1">Corpus Linguistics</div>
+                        <div id='corpling' class="course course1">Corpus Linguistics</div>
                     </div> <!-- end column -->
                 </div> <!-- end row -->
                 
@@ -283,7 +284,12 @@
         <a class="social-icon" href="https://github.com/yingyangle"  target="_blank"> <img src="images/github.svg" alt="Github" height="20"></a>
         <a class="social-icon" href="https://www.instagram.com/yingyangles/"  target="_blank"> <img src="images/instagram.svg" alt="Instagram" height="20"></a>
       </p>
-      <p>&copy; 2020 Christine Ying Yang</p>
+      <p id='my-copyright'>&copy; 2020 Christine Ying Yang</p>
+      <p id='languages' style="margin-bottom: 1rem;">
+        <a href="school.html" onclick="window.location.href = 'school.html#en'; window.location.reload(true);">English</a>
+        <a href="#de" onclick="window.location.href = 'school.html#de'; window.location.reload(true);">Deutsch</a>
+      </p>
+      
     </div> <!-- end footer-copyright -->
   </div> <!-- end container-fluid -->
 </footer>
@@ -294,8 +300,104 @@
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script> 
 <script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
 
+<script>
+  // TRANSLATIONS
+  var language = {
+    de: {
+      description: '(eine persönliche website)',
+      navAbout: 'info',
+      navWork: 'arbeit',
+      navSchool: 'uni',
+      navProjects: 'projekte',
+      navIpaAbout: '/ˈɪnfoː/',
+      navIpaWork: '/ˈaʁbaɪ̯t/',
+      navIpaSchool: '/ˈʊni/',
+      navIpaProjects: '/pʁoˈjɛktə/',
+      navAboutUrl: 'about.html#de',
+      navWorkUrl: 'work.html#de',
+      navSchoolUrl: 'school.html#de',
+      navProjectsUrl: 'projects.html#de',
+      navIndexUrl: 'index.html#de',
+
+      degree: 'B.A., Linguistik & Informatik',
+      honors: ' Auszeichnungen',
+      activities: 'Aktivitaten',
+      courses1: 'Kurse',
+      courses2: 'Kurse',
+
+      deansscholar: 'Deans-Scholar-Preis',
+      sophscholar: 'Sophomore-Scholar-Preis',
+      asg: 'Stipendium für fortgeschrittene Studien',
+      nle: 'Stipendium von der Nationale Lateinprüfung',
+      mband: 'Schreienden-Adler-Marschkapelle',
+      pband: 'Pep-Band',
+      cpp: 'Gesprächspartner-Programm',
+      bccss: 'BC Gesellschaft für Informatik',
+
+      morph: 'Morphologie',
+      syntax: 'Syntax & Semantik',
+      psycholing: 'Psycholinguistik',
+      socioling: 'Sociolinguistik',
+      typology: 'Typologie',
+      randomness: 'Zufälligkeit & Berechnung',
+      logic: 'Logik & Berechnung',
+      systems: 'Computersysteme',
+      compling: 'Einführung in die Computerlinguistik',
+      phonetics: 'Einführung in die Phonetik',
+      corpling: 'Korpuslinguistik'
+
+
+    }
+  };
+
+  // SWITCH LANGUAGES
+  if (window.location.hash) {
+    if (window.location.hash == "#de") {
+      navAbout.textContent = language.de.navAbout;
+      navWork.textContent = language.de.navWork;
+      navSchool.textContent = language.de.navSchool;
+      navProjects.textContent = language.de.navProjects;
+      navIpaAbout.textContent = language.de.navIpaAbout;
+      navIpaWork.textContent = language.de.navIpaWork;
+      navIpaSchool.textContent = language.de.navIpaSchool;
+      navIpaProjects.textContent = language.de.navIpaProjects;
+      navAboutUrl.href = language.de.navAboutUrl;
+      navWorkUrl.href = language.de.navWorkUrl;
+      navSchoolUrl.href = language.de.navSchoolUrl;
+      navProjectsUrl.href = language.de.navProjectsUrl;
+      navIndexUrl.href = language.de.navIndexUrl;
+      description.textContent = language.de.description;
+
+      courses1.textContent = language.de.courses1;
+      courses2.textContent = language.de.courses2;
+      activities.textContent = language.de.activities;
+      honors.textContent = language.de.honors;
+      degree.textContent = language.de.degree;
+
+      deansscholar.textContent = language.de.deansscholar;
+      sophscholar.textContent = language.de.sophscholar;
+      asg.textContent = language.de.asg;
+      nle.textContent = language.de.nle;
+      mband.textContent = language.de.mband;
+      pband.textContent = language.de.pband;
+      cpp.textContent = language.de.cpp;
+      bccss.textContent = language.de.bccss;
+
+      morph.textContent = language.de.morph;
+      syntax.textContent = language.de.syntax;
+      psycholing.textContent = language.de.psycholing;
+      socioling.textContent = language.de.socioling;
+      typology.textContent = language.de.typology;
+      randomness.textContent = language.de.randomness;
+      logic.textContent = language.de.logic;
+      systems.textContent = language.de.systems;
+      compling.textContent = language.de.compling;
+      phonetics.textContent = language.de.phonetics;
+      corpling.textContent = language.de.corpling;
+    }
+  }
+</script>
   
 </body>
 </html>

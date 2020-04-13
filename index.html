@@ -36,8 +36,8 @@
 <div class='container-fluid' style="padding: 0; width: 100%;">
   <div class="jumbotron text-center">
     <div id="title-container">
-      <a href='https://yingyangle.github.io'>
-        <div id="title">christine ying yang</div>
+      <a id="navIndexUrl" href='https://yingyangle.github.io'>
+        <div id="title" onclick="window.location.reload(true);">christine ying yang</div>
         <div id="title-ipa">/krɪˈstin &nbsp; jɪŋ &nbsp; jæŋ/</div>
       </a> <!-- end index.html link -->
     </div> <!-- end title-container -->
@@ -60,41 +60,41 @@
     <ul class="navbar-nav mr-auto" id="nav-items">
       <!-- ABOUT -->
       <li class="nav-item">
-        <a class="nav-link" href="about.html">
+        <a id='navAboutUrl' class="nav-link" href="about.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 60px;">
-            <div class="nav-text">about</div>
-            <div class="nav-ipa">/əˈbaʊt/</div>
+            <div class="nav-text" id="navAbout">about</div>
+            <div class="nav-ipa" id="navIpaAbout">/əˈbaʊt/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- WORK -->
       <li class="nav-item">
-        <a class="nav-link" href="work.html">
+        <a id='navWorkUrl' class="nav-link" href="work.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 90px;">
-            <div class="nav-text">work</div>
-            <div class="nav-ipa">/wɝk/</div>
+            <div class="nav-text" id="navWork">work</div>
+            <div class="nav-ipa" id="navIpaWork">/wɝk/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- SCHOOL -->
       <li class="nav-item">
-        <a class="nav-link" href="school.html">
+        <a id='navSchoolUrl' class="nav-link" href="school.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 50px;">
-            <div class="nav-text">school</div>
-            <div class="nav-ipa">/skuːl/</div>
+            <div class="nav-text" id="navSchool">school</div>
+            <div class="nav-ipa" id="navIpaSchool">/skuːl/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
       <!-- PROJECTS -->
       <li class="nav-item">
-        <a class="nav-link" href="projects.html">
+        <a id='navProjectsUrl' class="nav-link" href="projects.html" onclick="window.location.reload(true);">
           <div class='menu-icon'></div>
           <div class="nav-container" style="width: 100px;">
-            <div class="nav-text">projects</div>
-            <div class="nav-ipa">/ˈpɹɑdˌʒɛkts/</div>
+            <div class="nav-text" id="navProjects">projects</div>
+            <div class="nav-ipa" id="navIpaProjects">/ˈpɹɑdˌʒɛkts/</div>
           </div> <!-- end nav-container -->
         </a> <!-- end nav-link -->
       </li> <!-- end nav-item -->
@@ -138,11 +138,12 @@
                           <img src="images/flowers.svg" alt="" width="60px" class="mobile-show"><br>
 
                           <img src="images/flowers.svg" alt="" width="60px" class="inline flowers" style="transform: rotate(0deg);">
-                          <h1 class="inline"> &nbsp;Welcome.</h1>
+                          <h1 class='inline'>&nbsp;</h1>
+                          <h1 id='welcome' class="inline">&nbsp;Welcome. </h1>
                           <img src="images/flowers.svg" alt="" width="60px" class="inline flowers" style="transform: rotate(0deg);">
                           <br><br>
-                          <p style="margin-top: -1rem;">Hello, and welcome to my personal website.</p>
-                          <p>Feel free to look around. <span class="nobreak">ヽ(・∀・)ﾉ</span></p>
+                          <p id='welcome1' style="margin-top: -1rem;">Hello, and welcome to my personal website.</p>
+                          <p id='welcome2' >Feel free to look around. <span class="nobreak">ヽ(・∀・)ﾉ</span></p>
                         </div>
                     </div> <!-- end column -->
 
@@ -176,7 +177,12 @@
         <a class="social-icon" href="https://github.com/yingyangle"  target="_blank"> <img src="images/github.svg" alt="Github" height="20"></a>
         <a class="social-icon" href="https://www.instagram.com/yingyangles/"  target="_blank"> <img src="images/instagram.svg" alt="Instagram" height="20"></a>
       </p>
-      <p>&copy; 2020 Christine Ying Yang</p>
+      <p id='my-copyright'>&copy; 2020 Christine Ying Yang</p>
+      <p id='languages' style="margin-bottom: 1rem;">
+        <a href="index.html" onclick="window.location.href = 'index.html#en'; window.location.reload(true);">English</a>
+        <a href="#de" onclick="window.location.href = 'index.html#de'; window.location.reload(true);">Deutsch</a>
+      </p>
+      
     </div> <!-- end footer-copyright -->
   </div> <!-- end container-fluid -->
 </footer>
@@ -187,7 +193,57 @@
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script> 
 <script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+
+<script>
+  // TRANSLATIONS
+  var language = {
+    de: {
+      description: '(eine persönliche website)',
+      navAbout: 'info',
+      navWork: 'arbeit',
+      navSchool: 'uni',
+      navProjects: 'projekte',
+      navIpaAbout: '/ˈɪnfoː/',
+      navIpaWork: '/ˈaʁbaɪ̯t/',
+      navIpaSchool: '/ˈʊni/',
+      navIpaProjects: '/pʁoˈjɛktə/',
+      navAboutUrl: 'about.html#de',
+      navWorkUrl: 'work.html#de',
+      navSchoolUrl: 'school.html#de',
+      navProjectsUrl: 'projects.html#de',
+      navIndexUrl: 'index.html#de',
+
+      welcome: 'Wilkommen.',
+      welcome1: 'Hallo, und wilkommen auf meiner Website.',
+      welcome2: 'Schauen Sie sich ruhig um. ヽ(・∀・)ﾉ'
+
+    }
+  };
+
+  // SWITCH LANGUAGES
+  if (window.location.hash) {
+    if (window.location.hash == "#de") {
+      navAbout.textContent = language.de.navAbout;
+      navWork.textContent = language.de.navWork;
+      navSchool.textContent = language.de.navSchool;
+      navProjects.textContent = language.de.navProjects;
+      navIpaAbout.textContent = language.de.navIpaAbout;
+      navIpaWork.textContent = language.de.navIpaWork;
+      navIpaSchool.textContent = language.de.navIpaSchool;
+      navIpaProjects.textContent = language.de.navIpaProjects;
+      navAboutUrl.href = language.de.navAboutUrl;
+      navWorkUrl.href = language.de.navWorkUrl;
+      navSchoolUrl.href = language.de.navSchoolUrl;
+      navProjectsUrl.href = language.de.navProjectsUrl;
+      navIndexUrl.href = language.de.navIndexUrl;
+      description.textContent = language.de.description;
+      
+      welcome.textContent = language.de.welcome;
+      welcome1.textContent = language.de.welcome1;
+      welcome2.textContent = language.de.welcome2;
+    }
+  }
+</script>
   
 </body>
 </html>

@@ -253,8 +253,8 @@ a:hover .image {
 
 .body-icon {
 	margin-bottom: 2rem;
-	margin-right: 0.9rem;
-	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-left: 0.8rem;
 }
 
 .flowers {
@@ -314,6 +314,7 @@ a:hover .image {
 
 .bracket img {
 	height: 180px;
+	-webkit-filter: invert(15%);
 }
 
 #main-content .bracket {
@@ -373,7 +374,7 @@ a:hover .image {
 .course {
     color: white;
     /*opacity: 65%;*/
-    padding: .4rem 0.2rem;
+    padding: .5rem 0.2rem;
     margin-bottom: 0.8rem;
     border-radius: 1rem;
     transition: ease 0.2s;
@@ -385,7 +386,6 @@ a:hover .image {
     margin: 0 14vw;
     margin-bottom: 0.8rem;
     border-radius: 1rem;
-    transition: ease 0.2s;
 }
 
 .course1 {
@@ -659,15 +659,28 @@ button.navbar-toggler {
 .panel-footer p {
 	margin-bottom: 5px;
 }
-
 .footer-copyright a {
 	padding: 7px;
+}
+#my-copyright {
+	margin-bottom: 0;
+}
+
+#languages a {
+	/*color: var(--text-hover-color);*/
+	color: var(--text-color);
 }
 
 
 /***********************************************************/
 /********************** MEDIA QUERIES **********************/
 /***********************************************************/
+
+@media screen and (prefers-reduced-motion: reduce) { 
+}
+
+@media screen and (prefers-reduced-motion) { 
+}
 
 /********** HUGE DEVICES **********/
 /*@media (min-width: 2560px) {
