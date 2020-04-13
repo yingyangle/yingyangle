@@ -255,7 +255,7 @@ a:hover .image {
 
 .course {
     color: white;
-    opacity: 65%;
+    /*opacity: 65%;*/
     padding: .4rem 0.2rem;
     margin-bottom: 0.8rem;
     border-radius: 1rem;
@@ -264,7 +264,6 @@ a:hover .image {
 
 .single-col .course {
     color: white;
-    opacity: 65%;
     padding: .5rem 0.2rem;
     margin: 0 8rem;
     margin-bottom: 0.8rem;
@@ -273,11 +272,14 @@ a:hover .image {
 }
 
 .course1 {
-	background-color: var(--my-blue);
+	/*background-color: var(--my-blue);*/
+	background-color: rgb(181, 209, 216);
 }
 
 .course2 {
-	background-color: var(--my-green);
+	/*background-color: var(--my-green);*/
+	
+	background-color: rgb(187, 214, 173);
 }
 
 
