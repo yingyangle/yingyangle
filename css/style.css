@@ -2,68 +2,68 @@
 
 @font-face {
 	font-family: SweetGirls;
-	src: url("Sweet_Girls.ttf");
+	src: url("../fonts/Sweet_Girls.ttf");
 }
 
 @font-face {
 	font-family: "samellya";
-	src: url("samellya.ttf");
+	src: url("../fonts/samellya.ttf");
 }
 
 @font-face {
 	font-family: "sallat";
-	src: url("sallat.ttf");
+	src: url("../fonts/sallat.ttf");
 }
 
 @font-face {
 	font-family: "diggory";
-	src: url("diggory_doodles.ttf");
+	src: url("../fonts/diggory_doodles.ttf");
 }
 
 @font-face {
 	font-family: "Calibri";
-	src: url("Calibri.ttf");
+	src: url("../fonts/Calibri.ttf");
 }
 
 @font-face {
 	font-family: "Calibri";
-	src: url("Calibri Bold.ttf");
+	src: url("../fonts/Calibri Bold.ttf");
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Calibri";
-	src: url("Calibri Italic.ttf");
+	src: url("../fonts/Calibri Italic.ttf");
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Calibri";
-	src: url("Calibri Bold Italic.ttf");
+	src: url("../fonts/Calibri Bold Italic.ttf");
 	font-style: italic;
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Cambria";
-	src: url("Cambria.ttf");
+	src: url("../fonts/Cambria.ttf");
 }
 
 @font-face {
 	font-family: "Cambria";
-	src: url("Cambria Bold.ttf");
+	src: url("../fonts/Cambria Bold.ttf");
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Cambria";
-	src: url("Cambria Italic.ttf");
+	src: url("../fonts/Cambria Italic.ttf");
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Cambria";
-	src: url("Cambria Bold Italic.ttf");
+	src: url("../fonts/Cambria Bold Italic.ttf");
 	font-style: italic;
 	font-weight: bold;
 }
@@ -209,38 +209,6 @@ a:hover .image {
   box-shadow: 5px -3px 8px #CCC;
 }
 
-/*.shadow-effect {
-  position: relative;
-}
-.shadow-effect:before, .shadow-effect:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width:300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-.shadow-effect:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}*/
-
 .image-container {
 	margin: auto;
 	text-align: center;
@@ -249,7 +217,17 @@ a:hover .image {
 
 .image-container .image {
 	width: 50%;
+	filter: grayscale(100%);
+	border-radius: 2%;
 }
+
+.image-container .image:hover {
+	width: 50%;
+	filter: grayscale(0%);
+	box-shadow: 0 0px 20px rgba(0,0,0,0.19);
+	transition: 0.2s;
+}
+
 
 .body-icon {
 	margin-bottom: 2rem;
@@ -736,6 +714,13 @@ button.navbar-toggler {
 	color: var(--text-hover-color);
 		transition: 0s;
 
+}
+
+/* main page bracket and flower images */
+@media (max-width: 790px) {
+	.flowers {
+		display: none;
+	}
 }
 
 /********** SMALL-ISH DEVICES **********/

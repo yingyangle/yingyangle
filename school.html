@@ -50,7 +50,7 @@
 <nav class="navbar navbar-expand-sm navbar-light shadow-effect" id="my-navbar">
 <div class="container-fluid">
   <!-- HAMBURGER BUTTON -->
-  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsed-nav-items" aria-controls="collapsed-nav-items" aria-expanded="false" aria-label="Toggle navigation">
+  <button id='hamburger' class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsed-nav-items" aria-controls="collapsed-nav-items" aria-expanded="false" aria-label="Toggle navigation">
     <span class="icon-bar top-bar"></span>
     <span class="icon-bar middle-bar"></span>
     <span class="icon-bar bottom-bar"></span>
@@ -286,8 +286,8 @@
       </p>
       <p id='my-copyright'>&copy; 2020 Christine Ying Yang</p>
       <p id='languages' style="margin-bottom: 1rem;">
-        <a href="school.html" onclick="window.location.href = 'school.html#en'; window.location.reload(true);">English</a>
-        <a href="#de" onclick="window.location.href = 'school.html#de'; window.location.reload(true);">Deutsch</a>
+        <a href="" onclick="window.location.href = ''; window.location.reload(true);">English</a>
+        <a href="#de" onclick="window.location.href = '#de'; window.location.reload(true);">Deutsch</a>
       </p>
       
     </div> <!-- end footer-copyright -->
@@ -300,6 +300,7 @@
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script> 
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 
 <script>
   // TRANSLATIONS
@@ -314,11 +315,6 @@ crossorigin="anonymous"></script>
       navIpaWork: '/ˈaʁbaɪ̯t/',
       navIpaSchool: '/ˈʊni/',
       navIpaProjects: '/pʁoˈjɛktə/',
-      navAboutUrl: 'about.html#de',
-      navWorkUrl: 'work.html#de',
-      navSchoolUrl: 'school.html#de',
-      navProjectsUrl: 'projects.html#de',
-      navIndexUrl: 'index.html#de',
 
       degree: 'B.A., Linguistik & Informatik',
       honors: ' Auszeichnungen',
@@ -346,55 +342,27 @@ crossorigin="anonymous"></script>
       compling: 'Einführung in die Computerlinguistik',
       phonetics: 'Einführung in die Phonetik',
       corpling: 'Korpuslinguistik'
-
-
     }
   };
+  var language_links = {
+    de: {
+      navAboutUrl: 'about.html#de',
+      navWorkUrl: 'work.html#de',
+      navSchoolUrl: 'school.html#de',
+      navProjectsUrl: 'projects.html#de',
+      navIndexUrl: 'index.html#de'
+    }
+  }
 
   // SWITCH LANGUAGES
   if (window.location.hash) {
     if (window.location.hash == "#de") {
-      navAbout.textContent = language.de.navAbout;
-      navWork.textContent = language.de.navWork;
-      navSchool.textContent = language.de.navSchool;
-      navProjects.textContent = language.de.navProjects;
-      navIpaAbout.textContent = language.de.navIpaAbout;
-      navIpaWork.textContent = language.de.navIpaWork;
-      navIpaSchool.textContent = language.de.navIpaSchool;
-      navIpaProjects.textContent = language.de.navIpaProjects;
-      navAboutUrl.href = language.de.navAboutUrl;
-      navWorkUrl.href = language.de.navWorkUrl;
-      navSchoolUrl.href = language.de.navSchoolUrl;
-      navProjectsUrl.href = language.de.navProjectsUrl;
-      navIndexUrl.href = language.de.navIndexUrl;
-      description.textContent = language.de.description;
-
-      courses1.textContent = language.de.courses1;
-      courses2.textContent = language.de.courses2;
-      activities.textContent = language.de.activities;
-      honors.textContent = language.de.honors;
-      degree.textContent = language.de.degree;
-
-      deansscholar.textContent = language.de.deansscholar;
-      sophscholar.textContent = language.de.sophscholar;
-      asg.textContent = language.de.asg;
-      nle.textContent = language.de.nle;
-      mband.textContent = language.de.mband;
-      pband.textContent = language.de.pband;
-      cpp.textContent = language.de.cpp;
-      bccss.textContent = language.de.bccss;
-
-      morph.textContent = language.de.morph;
-      syntax.textContent = language.de.syntax;
-      psycholing.textContent = language.de.psycholing;
-      socioling.textContent = language.de.socioling;
-      typology.textContent = language.de.typology;
-      randomness.textContent = language.de.randomness;
-      logic.textContent = language.de.logic;
-      systems.textContent = language.de.systems;
-      compling.textContent = language.de.compling;
-      phonetics.textContent = language.de.phonetics;
-      corpling.textContent = language.de.corpling;
+      for (var item in language.de) {
+        document.querySelector("#"+item).textContent = language.de[item];
+      }
+      for (var item in language_links.de) {
+        document.querySelector("#"+item).href = language_links.de[item];
+      }
     }
   }
 </script>

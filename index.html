@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <!-- <meta name="robots" content="noindex,nofollow"> -->
+  <meta name="google" content="notranslate" />
 
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -22,7 +24,7 @@
 
   <!-- SITE INFO -->
   <title>christine ying yang</title>
-  <meta name="description" content="my personal website" />
+  <meta name="description" content="a personal website" />
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="images/icon_small.png" sizes="96x96">
 </head>
@@ -36,7 +38,8 @@
 <div class='container-fluid' style="padding: 0; width: 100%;">
   <div class="jumbotron text-center">
     <div id="title-container">
-      <a id="navIndexUrl" href='https://yingyangle.github.io'>
+      <!-- https://yingyangle.github.io -->
+      <a id="navIndexUrl" href=''>
         <div id="title" onclick="window.location.reload(true);">christine ying yang</div>
         <div id="title-ipa">/krɪˈstin &nbsp; jɪŋ &nbsp; jæŋ/</div>
       </a> <!-- end index.html link -->
@@ -50,7 +53,7 @@
 <nav class="navbar navbar-expand-sm navbar-light shadow-effect" id="my-navbar">
 <div class="container-fluid">
   <!-- HAMBURGER BUTTON -->
-  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsed-nav-items" aria-controls="collapsed-nav-items" aria-expanded="false" aria-label="Toggle navigation">
+  <button id="hamburger" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsed-nav-items" aria-controls="collapsed-nav-items" aria-expanded="false" aria-label="Toggle navigation">
     <span class="icon-bar top-bar"></span>
     <span class="icon-bar middle-bar"></span>
     <span class="icon-bar bottom-bar"></span>
@@ -113,55 +116,57 @@
 
 <!---------------------------- BODY ---------------------------->
 <div class='container-fluid'>
-  <div class="jumbotron container-fluid index shadow-effect" id='main-content'>
+  <div id="main-content" class="jumbotron container-fluid index shadow-effect">
+    <section class="mb-4" style="margin-top: -10px;">
+      <div class="row">
+          <div class="col-md-12 text-center">
+                  <!-- row -->
+                  <div class="row">
+                      <!-- column -->
+                      <div class="col-md-1">
+                      </div> <!-- end column -->
 
-  <section class="mb-4" style="margin-top: -10px;">
-    <div class="row">
-        <div class="col-md-12 text-center">
-                <!-- row -->
-                <div class="row">
-                    <!-- column -->
-                    <div class="col-md-1">
-                    </div> <!-- end column -->
+                      <!-- column -->
+                      <div class="col-md-2">
+                          <div class='bracket'>
+                            <img src="images/bracket_left.svg" alt="">
+                          </div>
+                      </div> <!-- end column -->
 
-                    <!-- column -->
-                    <div class="col-md-2">
-                        <div class='bracket'>
-                          <img src="images/bracket_left.svg" alt="">
-                        </div>
-                    </div> <!-- end column -->
+                      <!-- column -->
+                      <div class="col-md-6">
+                          <!-- WELCOME -->
+                          <div >
+                            <br>
+                            <img src="images/flowers.svg" alt="" width="60px" class="mobile-show"><br>
 
-                    <!-- column -->
-                    <div class="col-md-6">
-                        <!-- WELCOME -->
-                        <div >
-                          <img src="images/flowers.svg" alt="" width="60px" class="mobile-show"><br>
+                            <img src="images/flowers.svg" alt="" width="60px" class="inline flowers">
+                            <h1 class='inline'>&nbsp;</h1>
+                            <h1 id='welcome' class="inline">&nbsp;Welcome. </h1>
+                            <img src="images/flowers.svg" alt="" width="60px" class="inline flowers">
+                            <br><br>
+                            <p id='welcome1' style="margin-top: -1rem;">Hello, and welcome to my personal website.</p>
+                            <p id='welcome2' >Feel free to look around. <span class="nobreak">ヽ(・∀・)ﾉ</span></p>
+                          </div>
+                      </div> <!-- end column -->
 
-                          <img src="images/flowers.svg" alt="" width="60px" class="inline flowers" style="transform: rotate(0deg);">
-                          <h1 class='inline'>&nbsp;</h1>
-                          <h1 id='welcome' class="inline">&nbsp;Welcome. </h1>
-                          <img src="images/flowers.svg" alt="" width="60px" class="inline flowers" style="transform: rotate(0deg);">
-                          <br><br>
-                          <p id='welcome1' style="margin-top: -1rem;">Hello, and welcome to my personal website.</p>
-                          <p id='welcome2' >Feel free to look around. <span class="nobreak">ヽ(・∀・)ﾉ</span></p>
-                        </div>
-                    </div> <!-- end column -->
+                      <!-- column -->
+                      <div class="col-md-2">
+                          <div class='bracket'>
+                            <img src="images/bracket_right.svg" alt="">
+                          </div>
+                      </div> <!-- end column -->
 
-                    <!-- column -->
-                    <div class="col-md-2">
-                        <div class='bracket'>
-                          <img src="images/bracket_right.svg" alt="">
-                        </div>
-                    </div> <!-- end column -->
+                      <!-- column -->
+                      <div class="col-md-1">
+                      </div> <!-- end column -->
+                  </div> <!-- end row -->
 
-                    <!-- column -->
-                    <div class="col-md-1">
-                    </div> <!-- end column -->
-                </div> <!-- end row -->
+          </div> <!-- end col-md-9 -->
+      </div> <!-- end row -->
+    </section> <!-- end mb-4 -->
 
-        </div> <!-- end col-md-9 -->
-    </div> <!-- end row -->
-  </section> <!-- end mb-4 -->
+  
 
   </div> <!-- end jumbotron container-fluid -->
 </div> <!-- end container-fluid -->
@@ -179,8 +184,8 @@
       </p>
       <p id='my-copyright'>&copy; 2020 Christine Ying Yang</p>
       <p id='languages' style="margin-bottom: 1rem;">
-        <a href="https://yingyangle.github.io" onclick="window.location.href = 'https://yingyangle.github.io'; window.location.reload(true);">English</a>
-        <a href="https://yingyangle.github.io/index.html#de" onclick="window.location.href = 'https://yingyangle.github.io/index.html#de'; window.location.reload(true);">Deutsch</a>
+        <a href="" onclick="window.location.href = ''; window.location.reload(true);">English</a>
+        <a href="#de" onclick="window.location.href = '#de'; window.location.reload(true);">Deutsch</a>
       </p>
       
     </div> <!-- end footer-copyright -->
@@ -193,6 +198,7 @@
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script> 
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 
 <script>
   // TRANSLATIONS
@@ -207,42 +213,35 @@ crossorigin="anonymous"></script>
       navIpaWork: '/ˈaʁbaɪ̯t/',
       navIpaSchool: '/ˈʊni/',
       navIpaProjects: '/pʁoˈjɛktə/',
-      navAboutUrl: 'about.html#de',
-      navWorkUrl: 'work.html#de',
-      navSchoolUrl: 'school.html#de',
-      navProjectsUrl: 'projects.html#de',
-      navIndexUrl: 'index.html#de',
 
       welcome: 'Wilkommen.',
       welcome1: 'Hallo, und wilkommen auf meiner Website.',
       welcome2: 'Schauen Sie sich ruhig um. ヽ(・∀・)ﾉ'
-
     }
   };
+  var language_links = {
+    de: {
+      navAboutUrl: 'about.html#de',
+      navWorkUrl: 'work.html#de',
+      navSchoolUrl: 'school.html#de',
+      navProjectsUrl: 'projects.html#de',
+      navIndexUrl: 'index.html#de'
+    }
+  }
 
   // SWITCH LANGUAGES
   if (window.location.hash) {
     if (window.location.hash == "#de") {
-      navAbout.textContent = language.de.navAbout;
-      navWork.textContent = language.de.navWork;
-      navSchool.textContent = language.de.navSchool;
-      navProjects.textContent = language.de.navProjects;
-      navIpaAbout.textContent = language.de.navIpaAbout;
-      navIpaWork.textContent = language.de.navIpaWork;
-      navIpaSchool.textContent = language.de.navIpaSchool;
-      navIpaProjects.textContent = language.de.navIpaProjects;
-      navAboutUrl.href = language.de.navAboutUrl;
-      navWorkUrl.href = language.de.navWorkUrl;
-      navSchoolUrl.href = language.de.navSchoolUrl;
-      navProjectsUrl.href = language.de.navProjectsUrl;
-      navIndexUrl.href = language.de.navIndexUrl;
-      description.textContent = language.de.description;
-      
-      welcome.textContent = language.de.welcome;
-      welcome1.textContent = language.de.welcome1;
-      welcome2.textContent = language.de.welcome2;
+      for (var item in language.de) {
+        document.querySelector("#"+item).textContent = language.de[item];
+      }
+      for (var item in language_links.de) {
+        document.querySelector("#"+item).href = language_links.de[item];
+      }
     }
   }
+
+
 </script>
   
 </body>

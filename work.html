@@ -9,6 +9,7 @@
 
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/lightbox.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163440366-1"></script>
@@ -50,7 +51,7 @@
 <nav class="navbar navbar-expand-sm navbar-light shadow-effect" id="my-navbar">
 <div class="container-fluid">
   <!-- HAMBURGER BUTTON -->
-  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsed-nav-items" aria-controls="collapsed-nav-items" aria-expanded="false" aria-label="Toggle navigation">
+  <button id='hamburger' class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsed-nav-items" aria-controls="collapsed-nav-items" aria-expanded="false" aria-label="Toggle navigation">
     <span class="icon-bar top-bar"></span>
     <span class="icon-bar middle-bar"></span>
     <span class="icon-bar bottom-bar"></span>
@@ -128,8 +129,8 @@
   <p id='lrec' class="upper">(paper accepted to LREC 2020)</p>
   <p id='aapldtext' class="upper">Autism spectrum disorder (ASD) is a neurodevelopmental condition associated with life-long deficits in communication that can impact both personal and professional well-being. Although the linguistic features associated with these deficits are routinely observed in clinical settings, they are difficult to quantify. For our research, we're collecting a growing dataset of conversations between high-functioning adults with ASD and their neurotypical conversational partners as they complete several collaborative tasks. We compare the linguistic characteristics of the two groups using both manually annotated features and computationally predicted features extracted from the conversations.</p>
   <div class="image-container">
-    <!-- <a href="images/research1.png" data-lightbox="fraktur" data-title="comparison of speech act distribution for austic participants (ASD) and typically developing participants (TD)"><img src="images/research1.png" alt="" class="image" width="40%"></a> -->
-    <img src="images/research1.png" alt="" class="image" style="padding: 0 2rem">
+    <a href="images/research1.png" data-lightbox="fraktur" data-title="comparison of speech act distribution for austic participants (ASD) and typically developing participants (TD)"><img src="images/research1.png" alt="" class="image" width="40%"></a>
+    <!-- <img src="images/research1.png" alt="" class="image" style="padding: 0 2rem"> -->
   </div> <!-- end image-container -->
   <br><br>
  
@@ -157,8 +158,8 @@
       </p>
       <p id='my-copyright'>&copy; 2020 Christine Ying Yang</p>
       <p id='languages' style="margin-bottom: 1rem;">
-        <a href="work.html" onclick="window.location.href = 'work.html#en'; window.location.reload(true);">English</a>
-        <a href="#de" onclick="window.location.href = 'work.html#de'; window.location.reload(true);">Deutsch</a>
+        <a href="" onclick="window.location.href = ''; window.location.reload(true);">English</a>
+        <a href="#de" onclick="window.location.href = '#de'; window.location.reload(true);">Deutsch</a>
       </p>
       
     </div> <!-- end footer-copyright -->
@@ -171,6 +172,8 @@
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script> 
 <script src="js/bootstrap.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/script.js"></script>
 
 <script>
   // TRANSLATIONS
@@ -185,11 +188,6 @@ crossorigin="anonymous"></script>
       navIpaWork: '/ˈaʁbaɪ̯t/',
       navIpaSchool: '/ˈʊni/',
       navIpaProjects: '/pʁoˈjɛktə/',
-      navAboutUrl: 'about.html#de',
-      navWorkUrl: 'work.html#de',
-      navSchoolUrl: 'school.html#de',
-      navProjectsUrl: 'projects.html#de',
-      navIndexUrl: 'index.html#de',
 
       research: 'Forschung',
       researchintro: "Seit meinem zweiten Studienjahr forsche ich mit Professor Prud'hommeaux vom Fachbereich Informatik, und es hat mir viel Spaß gemacht. Hier sind einige der Projekte, an denen wir arbeiten:",
@@ -200,33 +198,25 @@ crossorigin="anonymous"></script>
       animalstext: 'Eine übliche Methode zur Früherkennung von Demenz ist die Durchführung eines verbalen Fluenztests, bei dem der Patient eine semantische oder phonetische Kategorie erhält und eine Minute Zeit hat, um Wörter aufzulisten, die zu dieser Kategorie gehören. In diesem Projekt werden Wortvektoren verwendet, um die Fluenztests automatisch zu analysieren, so dass Spezialisten die Daten nicht mehr manuell analysieren müssen. Mit "Tieren" als semantischem Thema sammeln wir verbale Fluenztestdaten von Teilnehmern verschiedener Altersgruppen, mit und ohne Demenz. Die Kosinus-Ähnlichkeit zwischen jedem Paar benachbarter Tiere in den Daten wird dann durch Vektorraummodelle erzeugt, um festzustellen, ob ein neues Unterthema begonnen hat. Wir verwenden mehrere vortrainierte Modelle, um die Wortvektoren zu generieren. Wir verwenden Algorithmen wie fastText, word2vec, gensim und GloVe, und wir sammeln auch domänenspezifische Daten aus Wikipedia, auf denen neue Modelle trainiert werden.'
     }
   };
+  var language_links = {
+    de: {
+      navAboutUrl: 'about.html#de',
+      navWorkUrl: 'work.html#de',
+      navSchoolUrl: 'school.html#de',
+      navProjectsUrl: 'projects.html#de',
+      navIndexUrl: 'index.html#de'
+    }
+  }
 
   // SWITCH LANGUAGES
   if (window.location.hash) {
     if (window.location.hash == "#de") {
-      navAbout.textContent = language.de.navAbout;
-      navWork.textContent = language.de.navWork;
-      navSchool.textContent = language.de.navSchool;
-      navProjects.textContent = language.de.navProjects;
-      navIpaAbout.textContent = language.de.navIpaAbout;
-      navIpaWork.textContent = language.de.navIpaWork;
-      navIpaSchool.textContent = language.de.navIpaSchool;
-      navIpaProjects.textContent = language.de.navIpaProjects;
-      navAboutUrl.href = language.de.navAboutUrl;
-      navWorkUrl.href = language.de.navWorkUrl;
-      navSchoolUrl.href = language.de.navSchoolUrl;
-      navProjectsUrl.href = language.de.navProjectsUrl;
-      navIndexUrl.href = language.de.navIndexUrl;
-      description.textContent = language.de.description;
-
-      research.textContent = language.de.research;
-      researchintro.textContent = language.de.researchintro;
-      aapld.textContent = language.de.aapld;
-      lrec.textContent = language.de.lrec;
-      aapldtext.textContent = language.de.aapldtext;
-      animals.textContent = language.de.animals;
-      animalstext.textContent = language.de.animalstext;
-      
+      for (var item in language.de) {
+        document.querySelector("#"+item).textContent = language.de[item];
+      }
+      for (var item in language_links.de) {
+        document.querySelector("#"+item).href = language_links.de[item];
+      }
     }
   }
 </script>
