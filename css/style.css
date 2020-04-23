@@ -216,13 +216,13 @@ a:hover .image {
 }
 
 .image-container .image {
-	width: 50%;
+	max-width: 400px;
+	max-height: 400px;
 	filter: grayscale(100%);
 	border-radius: 2%;
 }
 
 .image-container .image:hover {
-	width: 50%;
 	filter: grayscale(0%);
 	box-shadow: 0 0px 20px rgba(0,0,0,0.19);
 	transition: 0.2s;
@@ -711,9 +711,6 @@ button.navbar-toggler {
 		width: 95%;
 	}
 
-	color: var(--text-hover-color);
-		transition: 0s;
-
 }
 
 /* main page bracket and flower images */
@@ -730,7 +727,7 @@ button.navbar-toggler {
 	}
 
 	.image-container .image {
-	width: 100%;
+	width: 70%;
 	}
 
 	#title {
@@ -869,7 +866,7 @@ button.navbar-toggler {
 	}
 
 	.image-container .image {
-		width: 100%;
+		width: 90%;
 	}
 
 	/****** NAVBAR ******/
