@@ -242,10 +242,7 @@ crossorigin="anonymous"></script>
       phone: 'Telefon',
       email: 'E-Mail',
       messageme: 'Schreibe Mir',
-      emailform: 'E-Mail',
-      subject: 'Betreff',
-      message: 'Nachricht',
-      send: 'Senden'
+			send: 'Senden'
     }
   };
   var language_links = {
@@ -257,6 +254,13 @@ crossorigin="anonymous"></script>
       navIndexUrl: 'index.html#de'
     }
   }
+  var language_form = {
+    de: {
+      emailform: 'E-Mail',
+      subject: 'Betreff',
+      message: 'Nachricht'
+    }
+  }
 
   // SWITCH LANGUAGES
   if (window.location.hash) {
@@ -266,6 +270,9 @@ crossorigin="anonymous"></script>
       }
       for (var item in language_links.de) {
         document.querySelector("#"+item).href = language_links.de[item];
+      }
+      for (var item in language_form.de) {
+        document.querySelector("#"+item).placeholder = language_form.de[item];
       }
     }
   }
