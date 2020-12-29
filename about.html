@@ -9,7 +9,10 @@
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/media_queries.css" type="text/css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163440366-1"></script>
 	<script>
@@ -122,7 +125,7 @@
 	<!-- ABOUT ME -->
 	<img src="images/icon.png" width="120px" class="curve">
 	<h1 id="hello">hello</h1>
-	<p id="about">My name is Christine and this is my personal website. I'm currently a senior at Boston College studying linguistics and computer science. In my free time, I enjoy skiing, practicing the trumpet, and playing games with my friends. I love learning about cultures and languages, and I have a special fondness for mythology, etymologies, and cryptography. Anyways, this is a little website I made during the Social Distancing of 2020. Hope you enjoy. :)</p>
+	<p id="about">My name is Christine and this is my personal website. I'm currently a senior at Boston College studying linguistics and computer science. In my free time, I enjoy skiing, practicing the trumpet, and playing games with my friends. I love learning about languages and cultures, and I have a special fondness for mythology, etymology, and cryptography. Anyways, this is a website I made during the Social Distancing of 2020. Hope you enjoy. :)</p>
 	<p id="ps">P.S. Feel free to message me if you find any typos or mistakes.</p>
 	<br style="clear: left;"><br style="clear: left;">
 	<!-- <br style="clear: left;"> -->
@@ -246,7 +249,7 @@ crossorigin="anonymous"></script>
 			navResume: 'Lebenslauf',
 
 			hello: "hallo",
-			about: "Ich heiße Christine, und dies ist meine persönliche Website. Ich bin derzeit in meinem siebten Semester am Boston College und studiere Linguistik und Informatik. In meiner Freizeit fahre ich gerne Ski, übe Trompete und spiele Spielen mit meinen Freunden. Ich lerne gerne etwas über Kulturen und Sprachen, und ich habe eine besondere Vorliege für Mythologie, Etymologien und Kryptographie. Wie auch immer, dies ist eine kleine Website, die ich während der Sozialen Distanzierung von 2020 gemacht habe. Ich hoffe, sie gefällt Ihnen. :)",
+			about: "Ich heiße Christine, und dies ist meine persönliche Website. Ich bin derzeit in meinem siebten Semester am Boston College und studiere Linguistik und Informatik. In meiner Freizeit fahre ich gerne Ski, übe Trompete und spiele Spielen mit meinen Freunden. Ich lerne gerne etwas über Sprachen und Kulturen, und ich habe eine besondere Vorliege für Mythologie, Etymologien und Kryptographie. Wie auch immer, dies ist eine Website, die ich während der Sozialen Distanzierung von 2020 gemacht habe. Ich hoffe, sie gefällt Ihnen. :)",
 			ps: "P.S. Wenn Sie Tippfehler finden, können Sie mir gerne eine Nachricht schicken.",
 			contact: 'Kontakt',
 			phone: 'Telefon',
@@ -273,7 +276,8 @@ crossorigin="anonymous"></script>
 			$('a.nav-link, a.navbar-dropdown-item, #navIndexUrl').each(function() {
 				var _href = $(this).attr('href')
 				$(this).attr('href', _href + '#de')
-			});
+			})
+			$('#secret').attr('href', 'random.html#de')
 		}
 	}
 </script>

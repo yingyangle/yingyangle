@@ -9,7 +9,10 @@
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/media_queries.css" type="text/css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163440366-1"></script>
 	<script>
@@ -119,8 +122,7 @@
 
 	<!-- BOSTON COLLEGE -->
 	<img src="images/twirl_left.svg" class="body-icon twirl">
-	<h1 class="inline"> Boston College </h1>
-	<h1 class="number inline"> '21</h1>
+	<h1 class="inline"> Boston College '21</h1>
 	<img src="images/twirl_right.svg" class="body-icon twirl hide-mobile">
 	<p>Chestnut Hill, Massachusetts</p>
 	<p id="degree">B.A., Linguistics & Computer Science</p>
@@ -235,7 +237,7 @@
 	<!-- LSA SUMMER INSTITUTE -->
 	<img src="images/twirl_left.svg" class="body-icon twirl">
 	<h1 class="inline"> LSA Summer </h1>
-	<h1 class="noberak inline">Institute <h1 class="number inline"> '19</h1></h1>
+	<h1 class="noberak inline">Institute '19</h1>
 	<img src="images/twirl_right.svg" class="body-icon twirl">
 	<p>Davis, California</p>
 	<p>GPA: 4.0</p>
@@ -334,7 +336,7 @@ crossorigin="anonymous"></script>
 
 			degree: 'B.A., Linguistik & Informatik',
 			honors: ' Auszeichnungen',
-			activities: 'Aktivitaten',
+			activities: 'Aktivitäten',
 			courses1: 'Kurse',
 			courses2: 'Kurse',
 
@@ -373,7 +375,8 @@ crossorigin="anonymous"></script>
 			$('a.nav-link, a.navbar-dropdown-item, #navIndexUrl').each(function() {
 				var _href = $(this).attr('href')
 				$(this).attr('href', _href + '#de')
-			});
+			})
+			$('#secret').attr('href', 'random.html#de')
 		}
 	}
 </script>

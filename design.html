@@ -9,8 +9,10 @@
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/lightbox.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/media_queries.css" type="text/css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163440366-1"></script>
 	<script>
@@ -226,7 +228,8 @@ crossorigin="anonymous"></script>
 			$('a.nav-link, a.navbar-dropdown-item, #navIndexUrl').each(function() {
 				var _href = $(this).attr('href')
 				$(this).attr('href', _href + '#de')
-			});
+			})
+			$('#secret').attr('href', 'random.html#de')
 		}
 	}
 </script>

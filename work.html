@@ -9,8 +9,10 @@
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/lightbox.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/media_queries.css" type="text/css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163440366-1"></script>
 	<script>
@@ -209,7 +211,7 @@ crossorigin="anonymous"></script>
 			researchintro: "Seit meinem zweiten Studienjahr forsche ich mit Professor Prud'hommeaux vom Fachbereich Informatik, und es hat mir viel Spaß gemacht. Hier sind einige der Projekte, an denen wir arbeiten:",
 			aapld: 'Automatisierte Analyse der pragmatischen Sprachentwicklung bei Autismus',
 			aapldtext: 'Autismus-Spektrum-Störung (ASS) ist eine neurologische Entwicklungsstörung, die mit lebenslangen Kommunikationsdefiziten verbunden ist und sowohl das persönliche als auch das berufliche Wohlbefinden beeinträchtigen kann. Obwohl die sprachlichen Merkmale, die mit diesen Defiziten verbunden sind, routinemässig in klinischen Situationen beobachtet werden, sind sie schwer zu quantifizieren. Für unsere Forschung sammeln wir einen wachsenden Datensatz von Gesprächen zwischen hochfunktionellen Erwachsenen mit ASS und ihren neurotypischen Gesprächspartnern, während sie verschiedene kollaborative Aufgaben erfüllen. Wir verwenden sowohl manuell annotierte Merkmale als auch rechnerisch vorhergesagte Merkmale, um die sprachlichen Merkmale der beiden Gruppen zu vergleichen.',
-			animals: 'Automatisierte Sprachanalyse fur Demenz-Screening',
+			animals: 'Automatisierte Sprachanalyse für Demenz-Screening',
 			animalstext: 'Eine übliche Methode zur Früherkennung von Demenz ist die Durchführung eines verbalen Fluenztests, bei dem der Patient eine semantische oder phonetische Kategorie erhält und eine Minute Zeit hat, um Wörter aufzulisten, die zu dieser Kategorie gehören. In diesem Projekt werden Wortvektoren verwendet, um die Fluenztests automatisch zu analysieren, so dass Spezialisten die Daten nicht mehr manuell analysieren müssen. Mit "Tieren" als semantischem Thema sammeln wir verbale Fluenztestdaten von Teilnehmern verschiedener Altersgruppen, mit und ohne Demenz. Die Kosinus-Ähnlichkeit zwischen jedem Paar benachbarter Tiere in den Daten wird dann durch Vektorraummodelle erzeugt, um festzustellen, ob ein neues Unterthema begonnen hat. Wir verwenden mehrere vortrainierte Modelle, um die Wortvektoren zu generieren. Wir verwenden Algorithmen wie fastText, word2vec, gensim und GloVe, und wir sammeln auch domänenspezifische Daten aus Wikipedia, auf denen neue Modelle trainiert werden.'
 		}
 	};
@@ -223,7 +225,8 @@ crossorigin="anonymous"></script>
 			$('a.nav-link, a.navbar-dropdown-item, #navIndexUrl').each(function() {
 				var _href = $(this).attr('href')
 				$(this).attr('href', _href + '#de')
-			});
+			})
+			$('#secret').attr('href', 'random.html#de')
 		}
 	}
 </script>

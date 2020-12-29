@@ -9,9 +9,10 @@
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
-	<!-- <link rel="stylesheet" href="css/lightbox.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/media_queries.css" type="text/css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163440366-1"></script>
 	<script>
@@ -131,10 +132,54 @@
 <div class="container-fluid">
 	<div class="jumbotron container-fluid shadow-effect" id="main-content">
 
+		<!-- THE GERMAN LANGUAGE -->
+		<div>
+			<h1 id="germviz" class="inline">The German Language </h1>
+			<a class="social-icon-white" href="https://github.com/yingyangle/german-viz" target="_blank"><img src="images/mygithub.svg" title="(github)" class="icon-right" width="36rem"></a>
+			<a class="social-icon-white" href="http://yingyangle.github.io/german-viz" target="_blank"><img src="images/link.svg" title="(link to project)" class="icon-right" width="36rem"></a>
+		</div>
+		<p id="germvizwinner" style="margin-bottom: 26px;">*** Best Project Winner, Visualization Fall 2020, Prof. Nam Wook Kim ***</p>
+		<p id="germviztext" class="upper-more">German is a fascinating language to study, but it can also be very difficult at times. Students of German often spend many hours memorizing the gender and plural form for each German noun. This project aims to visualize the German language to help students find patterns for recognizing gender and plural forms in German nouns. By presenting several interactive analytical tools, this project allows the user to explore the different ways morphological endings correspond with gender and plural formation. The site also introduces beginners to some background about German, why it's interesting to study, as well as some basic grammar and syntax. 
+		</p>
+
+		<div class="row image-row">
+			<div class="col-md-6">
+				<div class="image-container">
+					<img src="images/germviz6.png" class="image" title="plural formation patterns in German visualized using a Sankey diagram, bubble chart, and pie chart with interactive filtering capabilities">
+				</div> <!-- end image-container -->
+				<br>
+				<div class="image-container">
+					<img src="images/germviz2.png" class="image" title="an interactive activity showing some fun and interesting compound words in German">
+				</div> <!-- end image-container -->
+				<br>
+				<div class="image-container">
+					<img src="images/germviz1.png" class="image" title="an interactive activity showing some Germanic words and the English words that come from them">
+				</div> <!-- end image-container -->
+				<br>
+			</div>
+			<div class="col-md-6">
+				<div class="image-container">
+					<img src="images/germviz4.png" class="image" title="morphological gender patterns in German visualized using an interactive ternary plot">
+				</div> <!-- end image-container -->
+				<br>
+				<div class="image-container">
+					<img src="images/germviz3.png" class="image" title="a map visualizing the distribution of native German speakers and second language learners of German">
+				</div> <!-- end image-container -->
+				<br>
+				<div class="image-container">
+					<img src="images/germviz7.png" class="image" title="an interactive dragging activity showing the effects of word order in German syntax">
+				</div> <!-- end image-container -->
+			</div>
+		</div>
+
+		
+		
+		<br><br><br>
+
 	<!-- RDM DASHBOARD -->
 	<div>
 		<h1 id="rdm" class="inline">RDM Dashboard </h1>
-		<a class="social-icon-white" href="https://github.com/lotus-project/RDM_map" target="_blank"><img src="images/mygithub.svg" title="(github)" class="icon-right" width="30rem"></a>
+		<a class="social-icon-white" href="https://github.com/lotus-project/RDM_map" target="_blank"><img src="images/mygithub.svg" title="(github)" class="icon-right" width="36rem"></a>
 	</div>
 	<p id="rdmtext" class="upper-more">The Rural Development Model (RDM) is a framework for economic development in a rural area with the goal of allowing the area to achieve self-sustained growth. The model was developed by Lotus Project, a non-profit organization working on projects to promote economic growth in rural communities in Vietnam and other developing countries. During my internship at Lotus Project we created an interactive dashboard to visualize the RDM Suitability Index, which describes the suitability of a certain area for undergoing the RDM Framework. Using this metric, we can more easily identify the best areas in which to further expand the project. The metric is calculated using data from publicly available datasets, which are then aggregated into categorical metrics to describe the main factors involved, such as economic, environmental, and cultural.</p>
 
@@ -146,7 +191,7 @@
 	<!-- FRAKTUR CRACKER -->
 	<div>
 		<h1 id="fraktur" class="inline">Fraktur Cracker </h1>
-		<a class="social-icon-white" href="https://github.com/yingyangle/fraktur" target="_blank"><img src="images/mygithub.svg" title="(github)" class="icon-right" width="30rem"></a>
+		<a class="social-icon-white" href="https://github.com/yingyangle/fraktur" target="_blank"><img src="images/mygithub.svg" title="(github)" class="icon-right" width="36rem"></a>
 	</div>
 	<p id="frakturtext" class="upper-more">Fraktur is a blackletter typeface commonly used in German texts up until the mid-20th century. The ability to automatically transcribe texts printed in Fraktur would enable scholars to more efficiently work with and analyze historical texts. Performing optical character recognition on historical texts in particular poses additional challenges resulting from broken characters, scan quality, and spelling variations. This project aims to apply a simple similarity-based approach to the optical character recognition of individual Fraktur letters. Using a zoning-based black pixel density feature we were able to achieve approximately 92% accuracy using a k-NN classifier.</p>
 	<div class="image-container">
@@ -161,7 +206,7 @@
 	<!-- WHO SAID THAT -->
 	<div>
 		<h1 id="wst" class="inline">Who Said That</h1><h1 class="number upper-bottom inline"> ? </h1>
-		<a class="social-icon-white" href="https://github.com/yingyangle/whosaidthat" target="_blank"><img src="images/mygithub.svg" title="(github)" class="icon-right" width="30rem"></a>
+		<a class="social-icon-white" href="https://github.com/yingyangle/whosaidthat" target="_blank"><img src="images/mygithub.svg" title="(github)" class="icon-right" width="36rem"></a>
 	</div>
 	<p id="wsttext" class="upper-more">Authorship attribution often relies upon the writing style, vocabulary, and topics of interest among different writers, however these factors are more difficult to ascertain when analyzing shorter documents. This project experiments with different methods of authorship attribution on shorter texts, using lines of dialogue from TV shows to try and predict the speaker of each line. We explore two sets of features, one consisting of manually selected linguistic features, and the other consisting of sentence embeddings generated from the Google News word2vec model. Of the three algorithms tested, we found that using sentence embeddings with a logistic regression algorithm generally yielded the highest accuracy for each show. We also observed some interesting differences in how the show's genre affected the accuracy of the predictions.</p>
 
@@ -225,6 +270,9 @@ crossorigin="anonymous"></script>
 			navSchool: 'Uni',
 			navResume: 'Lebenslauf',
 
+			germviz: 'Die Deutsche Sprache',
+			germvizwinner: '*** Gewinner des Best Class Project, Herbst 2020 ***',
+			germviztext: 'Deutsch ist eine faszinierende Sprache zum Lernen, aber es kann manchmal auch sehr schwierig sein. Deutschschüler verbringen oft viele Stunden damit, sich das Geschlecht und die Pluralform für jedes deutsche Substantiv zu merken. Dieses Projekt zielt darauf ab, die deutsche Sprache zu visualisieren, um den Schülern zu helfen, Muster für Geschlecht und Pluralformen in deutschen Substantiven zu finden. Durch die Präsentation einger interaktiver Analysewerkzeuge ermöglicht dieses Projekt dem Benutzer, die verschiedenen Arten zu untersuchen, in denen morphologische Endungen mit der Bildung von Geschlecht und Plural korrespondieren. Die Seite führt Anfänger auch in einige Hintergrundinformationen über Deutsch ein, warum es interessant zu lernen ist, und in einige grundlegende Grammatik und Syntax.',
 			rdmtext: 'Das Rural Development Model (RDM) ist ein Rahmen für die wirtschaftliche Entwicklung in einem ländlichen Gebiet mit dem Ziel, dem Gebiet ein selbsttragendes Wachstum zu ermöglichen. Das Modell wurde von Lotus Project entwickelt, einer gemeinnützigen Organisation, die an Projekten zur Förderung des Wirtschaftswachstums in ländlichen Gemeinden in Vietnam und anderen Entwicklungsländern arbeitet. Während meines Praktikums bei Lotus Project haben wir ein interaktives Dashboard erstellt, um den RDM-Eignungsindex zu visualisieren, der die Eignung eines bestimmten Bereichs für die Durchführung des RDM-Frameworks beschreibt. Mit dieser Metrik können wir leichter die besten Bereiche identifizieren, in denen das Projekt weiter ausgebaut werden kann. Die Metrik wird anhand von Daten aus öffentlich verfügbaren Datensätzen berechnet, die dann zu kategorialen Metriken zusammengefasst werden, um die wichtigsten Faktoren wie Wirtschaft, Umwelt und Kultur zu beschreiben.',
 			fraktur: 'Fraktur Knacker',
 			frakturtext: 'Die Fraktur ist eine gebrochene Schrift, die bis Mitte des 20. Jahrhunderts in deutschen Texten gebräuchlich war. Die Fähigkeit, in Fraktur gedruckte Texte automatisch zu transkribieren, würde es Wissenschaftlern ermöglichen, mit historischen Texten effizienter zu arbeiten und sie zu analysieren. Texten bringt zusätzliche Herausforderungen mit sich, wie z.B. gebrochene Buchstaben, Scanqualität und Rechtschreibvarianten. Dieses Projekt wendet einen einfachen, auf Ähnlichkeit basierenden Ansatz für die optische Zeichenerkennung einzelner Fraktur-Buchstaben an. Unter Verwendung eines Merkmals mit schwarzer Pixeldichte konnten wir mit einem k-NN-Klassifikator eine Genauigkeit von etwa 92% erreichen.',
@@ -242,7 +290,8 @@ crossorigin="anonymous"></script>
 			$('a.nav-link, a.navbar-dropdown-item, #navIndexUrl').each(function() {
 				var _href = $(this).attr('href')
 				$(this).attr('href', _href + '#de')
-			});
+			})
+			$('#secret').attr('href', 'random.html#de')
 		}
 	}
 </script>
