@@ -1,4 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Allerta+Stencil&family=Bellefair&family=Bodoni+Moda&family=Cabin+Sketch&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300&family=El+Messiri&family=Josefin+Slab:wght@400;500&family=Julius+Sans+One&family=Monoton&family=Nanum+Pen+Script&family=Playfair+Display+SC&family=Poiret+One&family=Spectral&family=Tenor+Sans&family=Thasadith&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
 @font-face {
 	font-family: SweetGirls;
 	src: url("../fonts/Sweet_Girls.ttf");
@@ -80,9 +84,9 @@
 	--another-purple: #BDB1F9;
 
 	/* FONTS */
-	--heading-font: Cambria, serif;
-	--body-font: Calibri, serif;
-	--ipa-font: Times New Roman, sans-serif;
+	--heading-font: 'Cambria', serif;
+	--body-font: 'Corbel', serif;
+	--ipa-font: 'Times New Roman', sans-serif;
 }
 
 ::selection {
@@ -92,6 +96,8 @@
 
 body {
 	font-size: 16px;
+	font-weight: 300;
+	line-height: 28px;
 	color: var(--text-color);
 	/*font-family: SweetGirls;*/
 	font-family: var(--body-font);
@@ -129,11 +135,12 @@ h3 {
 
 a {
 	color: var(--my-blue);
+	transition: 0.3s;
 }
 
 a:hover {
 	color: var(--my-green);
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a::selection {
@@ -143,6 +150,7 @@ a::selection {
 a:hover .image {
 	-webkit-filter: invert(40%);
 	border: blue;
+	transition: 0.2s;
 }
 
 .inline {
@@ -447,6 +455,7 @@ button.btn {
 	border: white;
 	border-radius: 1rem;
 	padding: 0.4rem 0.9rem;
+	transition: 0.3s;
 }
 button.btn:hover, button.btn:focus, button.btn.active {
 	background-color: var(--my-green) !important; 
@@ -522,6 +531,7 @@ ul.navbar-nav .dropdown:hover > .navbar-dropdown-content, ul.navbar-nav .dropdow
 	width: 35px;
 	height: 35px;
 	margin: auto;
+	transition: 0.3s;
 }
 
 /* navbar icon - CURRENT PAGE & HOVER */
