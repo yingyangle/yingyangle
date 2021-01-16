@@ -202,6 +202,10 @@ a:hover .image {
 	height: 90%;
 }
 
+#main-content * {
+	opacity: 0;
+	transition: 0.5s;
+}
 
 /********************** IMAGES & GRAPHICS **********************/
 .shadow-effect {
