@@ -235,12 +235,12 @@ a:hover .image {
 .image-container .image {
 	max-width: 400px;
 	max-height: 400px;
-	filter: grayscale(100%);
+	filter: grayscale(0%);
 	border-radius: 2%;
 }
 
 .image-container .image:hover {
-	filter: grayscale(0%);
+	filter: grayscale(100%);
 	box-shadow: 0 0px 20px rgba(0,0,0,0.19);
 	transition: 0.2s;
 }
