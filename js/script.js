@@ -1,3 +1,5 @@
+var current_image
+
 $(document).ready(function() {
 	$('#main-content *').css('opacity', 1)
 
@@ -15,22 +17,30 @@ $(document).ready(function() {
 	
 	
 	////////// IMAGE LIGHTBOX //////////
+
+	function showImageOverlay(img) {
+		// show selected image
+		src = $(img).attr('src')
+		$('#image-overlay').attr('src', src)
+
+		// show caption for selected image
+		caption = $(img).attr('data-caption')
+		$('#overlay-text').html(caption)
+	}
 	
 	// open overlay
 	$('.image-container').on('click', function() {
+		current_image = $(this).find('img')
 		// show overlay, disable background scroll
 		$('#overlay').css('visibility', 'visible')
 		overlay.setAttribute('aria-hidden', false)
 		document.body.classList.toggle('noscroll', true)
 	
-		// show selected image
-		img = $(this).find('img').attr('src')
-		$('#image-overlay').attr('src', img)
-	
-		// show caption for selected image
-		caption = $(this).find('img').attr('title')
-		$('#overlay-text').html(caption)
-		
+		img = $(this).find('img')
+		showImageOverlay(img)
+
+		$('#overlay-tip').css('visibility', 'visible')
+			.css('opacity', 1)
 	})
 	
 	// close overlay
@@ -52,7 +62,32 @@ $(document).ready(function() {
 		} else { // zoom out
 			$('#image-overlay').attr('width', '50%')
 		}
-		
-		
+	})
+
+	// navigate prev/next image
+	$(document).on('keyup', function(e) {
+		if ($('#overlay').css('visibility') == 'hidden') return
+		// prevent default keyup behavior
+		e.preventDefault()
+
+		// current image being show in overlay
+		var images = $('.image')
+		var cur = images.index(current_image)
+		// previous image - left arrow
+		if (e.which == 37) {
+			if (cur <= 0) return
+			img = images[cur-1]
+			current_image = img
+			showImageOverlay(img)
+		}
+		// next image - right arrow
+		else if (e.which == 39) {
+			if (cur >= images.length-1) return
+			img = images[cur+1]
+			current_image = img
+			showImageOverlay(img)
+		}
+		$('#overlay-tip').css('visibility', 'hidden')
+			.css('opacity', 0)
 	})
 })

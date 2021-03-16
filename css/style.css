@@ -258,6 +258,7 @@ a:hover .image {
 	right: 0; 
 	bottom: 0; 
 	left: 0; 
+	color: white;
 	background-color: rgba(0, 0, 0, 0.6);
 	visibility: hidden;
 }
@@ -270,8 +271,18 @@ a:hover .image {
 }
 
 #overlay-text {
-	color: white;
 	margin-top: 10px;
+}
+
+#overlay-tip {
+	border-radius: 10px;
+	border: 1px solid white;
+	padding: 6px;
+	margin: auto;
+	max-width: 500px;
+	visibility: visible;
+	opacity: 1;
+	/* transition: 0.3s ease; */
 }
 
 [aria-hidden="true"] { 
