@@ -41,26 +41,44 @@ $(document).ready(function() {
 
 		$('#overlay-tip').css('visibility', 'visible')
 			.css('opacity', 1)
+
+		$('#image-overlay').attr('width', '60%')
+		if (window.screen.width < 767) {
+			$('#image-overlay').attr('width', '90%')
+		}
 	})
 	
 	// close overlay
 	$('#overlay').on('click', function() {
 		// close overlay & re-enable scroll
 		$('#overlay').css('visibility', 'hidden')
+		$('#overlay-tip').css('visibility', 'hidden')
+			.css('opacity', 0)
 		document.body.classList.toggle('noscroll', false)
 	
 		// zoom out image
-		$('#image-overlay').attr('width', '50%')
+		$('#image-overlay').attr('width', '60%')
+		if (window.screen.width < 767) {
+			$('#image-overlay').attr('width', '90%')
+		}
 	})
 	
 	// image overlay zoom
 	$('#image-overlay').on('click', function(e) {
 		e.stopPropagation() // don't trigger #overlay click event
 		// zoom in
-		if ($('#image-overlay').attr('width') == '50%') {
-			$('#image-overlay').attr('width', '70%')
+		if (window.screen.width < 767) { // mobile
+			if ($('#image-overlay').attr('width') == '90%') {
+				$('#image-overlay').attr('width', '100%')
+			} else { // zoom out
+				$('#image-overlay').attr('width', '90%')
+			}
+			return
+		} // desktop
+		if ($('#image-overlay').attr('width') == '60%') {
+			$('#image-overlay').attr('width', '80%')
 		} else { // zoom out
-			$('#image-overlay').attr('width', '50%')
+			$('#image-overlay').attr('width', '60%')
 		}
 	})
 
@@ -86,6 +104,9 @@ $(document).ready(function() {
 			img = images[cur+1]
 			current_image = img
 			showImageOverlay(img)
+		}
+		else {
+			return
 		}
 		$('#overlay-tip').css('visibility', 'hidden')
 			.css('opacity', 0)

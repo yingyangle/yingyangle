@@ -76,7 +76,16 @@
 	}
 
 	.image-container .image {
-	width: 70%;
+		width: 70%;
+	}
+
+	.image-row {
+		margin: 0;
+		width: 100%;
+	}
+
+	.image-row .col-md-6 {
+		padding: 0;
 	}
 
 	#title {
@@ -216,6 +225,15 @@
 
 	.image-container .image {
 		width: 90%;
+	}
+
+	.image-row {
+		margin: 0;
+		width: 100%;
+	}
+
+	.image-row .col-md-6 {
+		padding: 0;
 	}
 
 	/****** NAVBAR ******/
