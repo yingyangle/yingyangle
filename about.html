@@ -125,7 +125,7 @@
 	<!-- ABOUT ME -->
 	<img src="images/icon.png" width="120px" class="curve">
 	<h1 id="hello">hello</h1>
-	<p id="about">My name is Christine and this is my personal website. I'm currently a senior at Boston College studying linguistics and computer science. In my free time, I enjoy skiing, practicing the trumpet, and playing games with my friends. I love learning about languages and cultures, and I have a special fondness for mythology, etymology, and cryptography. Anyways, this is a website I made during the Social Distancing of 2020. Hope you enjoy. :)</p>
+	<p id="about">My name is Christine and this is my personal website. I just recently graduated from Boston College with a double major in linguistics and computer science, and I'm currently teaching English at the Katholische Universität Eichstätt Ingolstadt in Germany. In my free time, I enjoy skiing, practicing the trumpet, and playing games with my friends. I love learning about languages and cultures, and I have a special fondness for mythology, etymology, and cryptography. Anyways, this is a website I made during the Social Distancing of 2020. Hope you enjoy. :)</p>
 	<p id="ps">P.S. Feel free to message me if you find any typos or mistakes.</p>
 	<br style="clear: left;"><br style="clear: left;">
 	<!-- <br style="clear: left;"> -->
@@ -249,13 +249,13 @@ crossorigin="anonymous"></script>
 			navResume: 'Lebenslauf',
 
 			hello: "hallo",
-			about: "Ich heiße Christine, und dies ist meine persönliche Website. Ich bin derzeit in meinem siebten Semester am Boston College und studiere Linguistik und Informatik. In meiner Freizeit fahre ich gerne Ski, übe Trompete und spiele Spielen mit meinen Freunden. Ich lerne gerne etwas über Sprachen und Kulturen, und ich habe eine besondere Vorliege für Mythologie, Etymologien und Kryptographie. Wie auch immer, dies ist eine Website, die ich während der Sozialen Distanzierung von 2020 gemacht habe. Ich hoffe, sie gefällt Ihnen. :)",
+			about: "Ich heiße Christine, und dies ist meine persönliche Website. Ich habe gerade das Boston College mit einem Doppelstudium in Linguistik und Informatik abgeschlossen, und jetzt unterrichte ich Englisch an der Katholischen Universität Eichstätt Ingolstadt in Deutschland. In meiner Freizeit fahre ich gerne Ski, übe Trompete und spiele Spielen mit meinen Freunden. Ich lerne gerne etwas über Sprachen und Kulturen, und ich habe eine besondere Vorliege für Mythologie, Etymologien und Kryptographie. Wie auch immer, dies ist eine Website, die ich während der Sozialen Distanzierung von 2020 gemacht habe. Ich hoffe, sie gefällt Ihnen. :)",
 			ps: "P.S. Wenn Sie Tippfehler finden, können Sie mir gerne eine Nachricht schicken.",
 			contact: 'Kontakt',
 			phone: 'Telefon',
 			email: 'E-Mail',
-			messageme: 'Schreibe Mir',
-			send: 'Senden'
+			messageme: 'Schreib Mir',
+			send: 'Schicken'
 		}
 	};
 	var language_links = {
@@ -277,8 +277,14 @@ crossorigin="anonymous"></script>
 				var _href = $(this).attr('href')
 				$(this).attr('href', _href + '#de')
 			})
+
+			// manual translations
+			$('#emailform').attr('placeholder', 'E-Mail')
+			$('#subject').attr('placeholder', 'Betreff')
+			$('#message').attr('placeholder', 'Nachricht')
 		}
 	}
+
 </script>
 	
 </body>
