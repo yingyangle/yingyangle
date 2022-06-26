@@ -3,30 +3,42 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- PAGE INFO -->
+	<title>school | christine ying yang</title>
+	<meta name="description" content="welcome to my personal website">
+
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+	<link rel="manifest" href="media/favicon/site.webmanifest">
+	<link rel="mask-icon" href="media/favicon/safari-pinned-tab.svg" color="#76b4c0">
+	<link rel="shortcut icon" href="media/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="imagesz/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- RESOURCE HINTS -->
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/media_queries.css" type="text/css">
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163440366-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
+
 		gtag('config', 'UA-163440366-1');
 	</script>
-
-	<!-- SITE INFO -->
-	<title>christine ying yang</title>
-	<meta name="description" content="a personal website" />
-	<!-- FAVICON -->
-	<link rel="icon" type="image/png" href="images/icon_small.png" sizes="96x96">
 </head>
 
 
@@ -34,11 +46,11 @@
 <!---------------------------- HEADER ---------------------------->
 <header>
 	<!-- TITLE HEADER -->
-	<div class="container-fluid" style="padding: 0; width: 100%;">
+	<div class="container-fluid title-header">
 		<div class="jumbotron text-center">
 			<!-- SECRET -->
 			<div id="secret-container">
-				<a id="secret" href="https://yingyangle.web.app" target="_blank">(random stuff)</a>
+				<a id="secret" href="https://yingyangle.web.app" target="_blank" rel="noopener noreferrer">(random stuff)</a>
 			</div>
 			<!-- TITLE -->
 			<div id="title-container">
@@ -68,7 +80,7 @@
 				<li class="nav-item dropdown">
 					<a id="navAboutUrl" class="nav-link" href="about.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						<div class="menu-icon menu-icon-fill"></div>
-						<div class="nav-container" style="width: 100px;">
+						<div class="nav-container">
 							<div class="nav-text" id="navAbout">about</div>
 							<div class="nav-ipa" id="navIpaAbout">/əˈbaʊt/</div>
 						</div> <!-- end nav-container -->
@@ -78,23 +90,13 @@
 						<a class="navbar-dropdown-item" id="navResume" href="resume.html">resume</a>
 					</div> <!-- end dropdown -->
 				</li> <!-- end nav-item -->
-				<!-- WORK -->
+				<!-- DATA VIZ -->
 				<li class="nav-item dropdown">
-					<a id="navWorkUrl" class="nav-link" href="work.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<a id="navDataVizUrl" class="nav-link" href="data-viz.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						<div class="menu-icon"></div>
-						<div class="nav-container" style="width: 100px;">
-							<div class="nav-text" id="navWork">work</div>
-							<div class="nav-ipa" id="navIpaWork">/wɝk/</div>
-						</div> <!-- end nav-container -->
-					</a> <!-- end nav-link -->
-				</li> <!-- end nav-item -->
-				<!-- PROJECTS -->
-				<li class="nav-item dropdown">
-					<a id="navProjectsUrl" class="nav-link" href="projects.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						<div class="menu-icon"></div>
-						<div class="nav-container" style="width: 100px;">
-							<div class="nav-text" id="navProjects">projects</div>
-							<div class="nav-ipa" id="navIpaProjects">/ˈpɹɑdˌʒɛkts/</div>
+						<div class="nav-container">
+							<div class="nav-text" id="navDataViz">data viz</div>
+							<div class="nav-ipa" id="navIpaDataViz">/ˈdeɪtə vɪz/</div>
 						</div> <!-- end nav-container -->
 					</a> <!-- end nav-link -->
 				</li> <!-- end nav-item -->
@@ -102,9 +104,19 @@
 				<li class="nav-item dropdown">
 					<a id="navDesignUrl" class="nav-link" href="design.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						<div class="menu-icon"></div>
-						<div class="nav-container" style="width: 100px;">
+						<div class="nav-container">
 							<div class="nav-text" id="navDesign">design</div>
 							<div class="nav-ipa" id="navIpaDesign">/dɪˈzaɪn/</div>
+						</div> <!-- end nav-container -->
+					</a> <!-- end nav-link -->
+				</li> <!-- end nav-item -->
+				<!-- RESEARCH -->
+				<li class="nav-item dropdown">
+					<a id="navResearchUrl" class="nav-link" href="research.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="menu-icon"></div>
+						<div class="nav-container">
+							<div class="nav-text" id="navResearch">research</div>
+							<div class="nav-ipa" id="navIpaResearch">/ˈɹi.sɚtʃ/</div>
 						</div> <!-- end nav-container -->
 					</a> <!-- end nav-link -->
 				</li> <!-- end nav-item -->
@@ -118,21 +130,20 @@
 
 <!---------------------------- BODY ---------------------------->
 <div class="container-fluid">
-	<div class="jumbotron container-fluid school shadow-effect" id="main-content">
+	<div class="main-content jumbotron container-fluid school shadow-effect">
 
 	<!-- BOSTON COLLEGE -->
-	<img src="images/twirl_left.svg" class="body-icon twirl">
+	<img src="media/icons/twirl_left.svg" class="body-icon twirl">
 	<h1 class="inline"> Boston College '21</h1>
-	<img src="images/twirl_right.svg" class="body-icon twirl hide-mobile">
+	<img src="media/icons/twirl_right.svg" class="body-icon twirl hide-mobile">
 	<p>Chestnut Hill, Massachusetts</p>
 	<p id="degree">B.A., Linguistics & Computer Science</p>
 	<p>GPA: 3.93</p>
 	<br>
 
-	<img src="images/trophy.svg" width="25px" class="body-icon">
-	<h2 id="honors" style="display: inline;">Honors</h2>
-	<!-- <h2 style="display: inline; font-family: diggory; font-size: 14px;"> & </h2><h2 style="display: inline;">Awards</h2> -->
-	<img src="images/trophy.svg" width="25px" class="body-icon hide-mobile">
+	<img src="media/icons/trophy.svg" width="25px" class="body-icon lowercase">
+	<h2 id="honors" class="inline lowercase">Honors</h2>
+	<img src="media/icons/trophy.svg" width="25px" class="body-icon hide-mobile">
 	<p id="pbk">Phi Beta Kappa</p>
 	<p id="deansscholar">Dean's Scholar Award</p>
 	<p id="sophscholar">Sophomore Scholar Award</p>
@@ -140,19 +151,18 @@
 	<p id="nle">National Latin Exam Scholarship Recipient</p>
 	<br>
 
-	<img src="images/trumpet.svg" width="40px" class="body-icon">
-	<!-- <h2 style="display: inline;">Clubs</h2><h2 style="display: inline; font-family: diggory; font-size: 14px;"> & </h2><h2 style="display: inline;">Activities</h2> -->
-	<h2 id="activities" style="display: inline;">Activities</h2>
-	<img src="images/trumpet.svg" width="40px" class="body-icon hide-mobile">
+	<img src="media/icons/trumpet.svg" width="40px" class="body-icon">
+	<h2 id="activities" class="inline lowercase">Activities</h2>
+	<img src="media/icons/trumpet.svg" width="40px" class="body-icon hide-mobile">
 	<p id="mband">Screaming Eagles Marching Band</p>
 	<p id="pband">Boston College Pep Band</p>
 	<p id="cpp">Conversation Partners Program</p>
-	<p id="bccss">BC Computer Science Society</p>
+	<p id="csinterviews">Student Interview Committee Lead for CS Faculty Interviews</p>
 	<br>
 
-	<img src="images/pencil.svg" class="body-icon pencil">
-	<h2 id="courses1" class="inline">Coursework</h2>
-	<img src="images/pencil.svg" class="body-icon pencil hide-mobile">
+	<img src="media/icons/pencil.svg" class="body-icon pencil">
+	<h2 id="courses1" class="inline lowercase">Coursework</h2>
+	<img src="media/icons/pencil.svg" class="body-icon pencil hide-mobile">
 	<section class="coursework">
 		<div class="row">
 				<div class="col-md-12">
@@ -235,17 +245,17 @@
 	<br><br>
 
 	<!-- LSA SUMMER INSTITUTE -->
-	<img src="images/twirl_left.svg" class="body-icon twirl">
+	<img src="media/icons/twirl_left.svg" class="body-icon twirl">
 	<h1 class="inline"> LSA Summer </h1>
 	<h1 class="noberak inline">Institute '19</h1>
-	<img src="images/twirl_right.svg" class="body-icon twirl">
+	<img src="media/icons/twirl_right.svg" class="body-icon twirl">
 	<p>Davis, California</p>
 	<p>GPA: 4.0</p>
 	<br>
 
-	<img src="images/pencil.svg" class="body-icon pencil">
-	<h2 id="courses2" class="inline">Coursework</h2>
-	<img src="images/pencil.svg" class="body-icon pencil hide-mobile">
+	<img src="media/icons/pencil.svg" class="body-icon pencil">
+	<h2 id="courses2" class="inline lowercase">Coursework</h2>
+	<img src="media/icons/pencil.svg" class="body-icon pencil hide-mobile">
 	<section class="coursework single-col">
 		<div class="row">
 				<div class="col-md-12">
@@ -297,12 +307,12 @@
 	<div class="container-fluid" id="footer-container">
 		<div class="footer-copyright text-center">
 			<p> <!-- SOCIAL LINKS -->
-				<a class="social-icon" href="https://www.linkedin.com/in/yingyangle/" target="_blank"> <img src="images/linkedin.svg" title="LinkedIn" height="20"></a>
-				<a class="social-icon" href="https://github.com/yingyangle"  target="_blank"> <img src="images/github.svg" title="Github" height="20"></a>
-				<a class="social-icon" href="mailto:cyang1999@gmail.com"  target="_blank"> <img src="images/mail.svg" title="Email" height="20"></a>
+				<a class="social-icon" href="https://www.linkedin.com/in/yingyangle/" target="_blank" rel="noopener noreferrer"> <img src="media/icons/linkedin.svg" title="LinkedIn" height="20"></a>
+				<a class="social-icon" href="https://github.com/yingyangle"  target="_blank" rel="noopener noreferrer"> <img src="media/icons/github.svg" title="Github" height="20"></a>
+				<a class="social-icon" href="mailto:cyang1999@gmail.com"  target="_blank" rel="noopener noreferrer"> <img src="media/icons/mail.svg" title="Email" height="20"></a>
 			</p>
-			<p id="my-copyright">&copy; 2020 Christine Ying Yang</p>
-			<p id="languages" style="margin-bottom: 1rem;">
+			<p id="my-copyright">&copy; 2022 Christine Ying Yang</p>
+			<p id="languages">
 				<a href="" onclick="window.location.href = ''; window.location.reload(true);">English</a>
 				<a href="#de" onclick="window.location.href = '#de'; window.location.reload(true);">Deutsch</a>
 			</p>
@@ -313,72 +323,11 @@
 <!---------------------------- END FOOTER ---------------------------->
 
 <!-- SCRIPTS -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/translations.js"></script>
 <script src="js/script.js"></script>
-
-<script>
-	// TRANSLATIONS
-	var language = {
-		de: {
-			description: '(eine persönliche website)',
-			navAbout: 'info',
-			navWork: 'arbeit',
-			navProjects: 'projekte',
-			navIpaAbout: '/ˈɪnfoː/',
-			navIpaWork: '/ˈaʁbaɪ̯t/',
-			navIpaProjects: '/pʁoˈjɛktə/',
-			navSchool: 'Uni',
-			navResume: 'Lebenslauf',
-
-			degree: 'B.A., Linguistik & Informatik',
-			honors: ' Auszeichnungen',
-			activities: 'Aktivitäten',
-			courses1: 'Kurse',
-			courses2: 'Kurse',
-
-			deansscholar: 'Deans-Scholar-Preis',
-			sophscholar: 'Sophomore-Scholar-Preis',
-			asg: 'Stipendium für fortgeschrittene Studien',
-			nle: 'Stipendium von der Nationale Lateinprüfung',
-			mband: 'Schreienden-Adler-Marschkapelle',
-			pband: 'Pep-Band',
-			cpp: 'Gesprächspartner-Programm',
-			bccss: 'BC Gesellschaft für Informatik',
-
-			morph: 'Morphologie',
-			syntax: 'Syntax & Semantik',
-			psycholing: 'Psycholinguistik',
-			socioling: 'Sociolinguistik',
-			typology: 'Typologie',
-			// structenglish: 'Linguistische Struktur des Englischen',
-			fnf: 'Formalismus & Funktionalismus',
-			viz: 'Datenvisualisierung',
-			randomness: 'Zufälligkeit & Berechnung',
-			algs: 'Algorithmen',
-			datastructs: 'Datenstrukturen',
-			compling: 'Einführung in die Computerlinguistik',
-			phonetics: 'Einführung in die Phonetik',
-			corpling: 'Korpuslinguistik'
-		}
-	};
-	
-	// SWITCH LANGUAGES
-	if (window.location.hash) {
-		if (window.location.hash == '#de') {
-			for (var item in language.de) {
-				$('#'+item).text(language.de[item])
-			}
-			$('a.nav-link, a.navbar-dropdown-item, #navIndexUrl').each(function() {
-				var _href = $(this).attr('href')
-				$(this).attr('href', _href + '#de')
-			})
-		}
-	}
-</script>
 	
 </body>
 </html>
